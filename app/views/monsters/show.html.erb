@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @monster.name %>
+</p>
+
+<p>
+  <strong>Fire:</strong>
+  <%= @monster.fire %>
+</p>
+
+<p>
+  <strong>Water:</strong>
+  <%= @monster.water %>
+</p>
+
+<p>
+  <strong>Thunder:</strong>
+  <%= @monster.thunder %>
+</p>
+
+<p>
+  <strong>Ice:</strong>
+  <%= @monster.ice %>
+</p>
+
+<p>
+  <strong>Soil:</strong>
+  <%= @monster.soil %>
+</p>
+
+<p>
+  <strong>Comment:</strong>
+  <%= @monster.comment %>
+</p>
+
+<%= link_to 'Edit', edit_monster_path(@monster) %> |
+<%= link_to 'Back', monsters_path %>

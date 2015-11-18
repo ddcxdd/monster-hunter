@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  fire: 1
+  water: 1
+  thunder: 1
+  ice: 1
+  soil: 1
+  comment: MyString
+
+two:
+  name: MyString
+  fire: 1
+  water: 1
+  thunder: 1
+  ice: 1
+  soil: 1
+  comment: MyString

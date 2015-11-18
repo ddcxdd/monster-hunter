@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+.sidebar{
+    float:left;
+}
+.contents{
+    float:left;
+}
+.footer{
+    clear:left
+}
