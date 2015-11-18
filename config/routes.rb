@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
+  resources :arms
   get 'home/top'
+  root 'home#top'
 
   resources :monsters
   # The priority is based upon order of creation: first created -> highest priority.

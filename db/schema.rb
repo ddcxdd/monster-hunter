@@ -11,7 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151118064345) do
+ActiveRecord::Schema.define(version: 20151118104758) do
+
+  create_table "arms", force: :cascade do |t|
+    t.string   "name",        limit: 255
+    t.string   "skill",       limit: 255
+    t.string   "zokusei",     limit: 255
+    t.integer  "rare",        limit: 4
+    t.integer  "max_level",   limit: 4
+    t.string   "series",      limit: 255
+    t.integer  "attack",      limit: 4
+    t.integer  "max_attack",  limit: 4
+    t.string   "item",        limit: 255
+    t.integer  "item_number", limit: 4
+    t.float    "hyouka",      limit: 24
+    t.string   "comment",     limit: 255
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
+  end
 
   create_table "monsters", force: :cascade do |t|
     t.string   "name",       limit: 255

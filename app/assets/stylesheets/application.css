@@ -16,10 +16,18 @@
 .sidebar{
     float:left;
     width:200px;
+    height:3000px;
     background-color: #89ffa5;
 }
 
+.sidebar li {
 
+    height:30px;
+    width:200px;
+    background-color: orange;
+    margin-bottom:20px;
+    display:table;
+}
 .footer{
     clear:left
 }

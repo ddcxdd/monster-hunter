@@ -8,17 +8,17 @@
 </head>
 <body>
   <div class="header">
-    <div class="header-left">プログレア攻略</div>
+    <div class="header-left">エクスプロア攻略</div>
     <div class="header-right"></div>
   </div>
   <div class = "main">
 
   <div class="sidebar">
-  <ul>
-   <li>トップページ</li>
-    <li>武器一覧</li>
+  <ul style="list-style:none;">
+   <li><%= link_to 'トップページ', root_path %></li>
+    <li><%= link_to '武器一覧',arms_path %></li>
     <li>防具一覧</li>
-    <li>モンスター一覧</li>
+    <li><%= link_to 'モンスター一覧', monsters_path %></li>
 
   </ul>
   </div>
