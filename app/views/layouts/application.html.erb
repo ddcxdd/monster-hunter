@@ -7,19 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="header">
+    <div class="header-left">プログレア攻略</div>
+    <div class="header-right"></div>
+  </div>
+  <div class = "main">
 
-<body class = "sidebar">
-<ul>
-  <li>トップページ</li>
-  <li>武器一覧</li>
-  <li>防具一覧</li>
-  <li>モンスター一覧</li>
+  <div class="sidebar">
+  <ul>
+   <li>トップページ</li>
+    <li>武器一覧</li>
+    <li>防具一覧</li>
+    <li>モンスター一覧</li>
 
-</ul>
+  </ul>
+  </div>
 
-</body>
 
-<%= yield %>
 
+  <%= yield %>
+
+  </div>
 </body>
 </html>

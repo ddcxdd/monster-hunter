@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
-<body class = "contents">
-<h1>大型モンスタ-一覧</h1>
+
+<div class = "contents">
+<h1 class = "title">大型モンスタ-一覧</h1>
 
 <table>
   <thead>
@@ -20,11 +21,32 @@
     <% @monsters.each do |monster| %>
       <tr>
         <td><%= monster.name %></td>
-        <td><%= monster.fire %></td>
-        <td><%= monster.water %></td>
-        <td><%= monster.thunder %></td>
-        <td><%= monster.ice %></td>
-        <td><%= monster.soil %></td>
+        <% types = ["fire","water","thunder","ice","soil"] %>
+        <% if monster.fire == 1 then %>
+            <td><%= "○" %></td>
+            <%else %>
+            <td><%= "×" %></td>
+            <% end %>
+        <% if monster.water == 1 then %>
+            <td><%= "○" %></td>
+        <%else %>
+            <td><%= "×" %></td>
+        <% end %>
+        <% if monster.thunder == 1 then %>
+            <td><%= "○" %></td>
+        <%else %>
+            <td><%= "×" %></td>
+        <% end %>
+        <% if monster.ice == 1 then %>
+            <td><%= "○" %></td>
+        <%else %>
+            <td><%= "×" %></td>
+        <% end %>
+        <% if monster.soil == 1 then %>
+            <td><%= "○" %></td>
+        <%else %>
+            <td><%= "×" %></td>
+        <% end %>
         <td><%= monster.comment %></td>
         <td><%= link_to 'Show', monster %></td>
         <td><%= link_to 'Edit', edit_monster_path(monster) %></td>
@@ -37,4 +59,4 @@
 <br>
 
 <%= link_to 'New Monster', new_monster_path %>
-</body>
+</div>
