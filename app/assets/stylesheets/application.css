@@ -17,16 +17,28 @@
     float:left;
     width:200px;
     height:3000px;
-    background-color: #89ffa5;
+    background-color: #DADADA;
+    border-right:#2E2F30 1px dotted;
 }
+.menu{
+    background-color:#666666;
+}
+ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
 
+}
 .sidebar li {
+    margin-right: 2px;
+    margin-left:2px;
+    padding:5px;
+    border-bottom:solid 1px #666666;
+    padding:10px;
+    margin:10px;
 
-    height:30px;
-    width:200px;
-    background-color: orange;
-    margin-bottom:20px;
-    display:table;
+
+    margin-top:20px;
 }
 .footer{
     clear:left
