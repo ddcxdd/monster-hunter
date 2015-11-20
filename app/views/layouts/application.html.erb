@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
+
 <body>
 
   <div class="header">
@@ -37,14 +38,55 @@
   </div>
 
 
+<div class="header">
+  <div class="header-left"><%= image_tag('header.png')  %></div>
+  <table>
+    <th><%= link_to "メニュー",:anchor =>"footer3" %></th>
+    <th>人気記事</th>
+    <th>Q&A</th>
+    <th>検索</th>
+  </table>
+
+</div>
+
+<body>
+
+
+
+
+
+
+
   <div class = "main">
     <%= yield %>
   </div>
+
 
   <div class="sidebar-right">
     <h2>人気記事</h2>
     <ul class = "ninki" style="list-style:none;">
     </ul>
+  </div>
+
+
+
+  <div class="footer" id="footer3">
+    <h2>メニュー</h2>
+    <table >
+      <tr><td><%= link_to 'トップページ', root_path %></td></tr>
+      <tr><td><%= link_to '武器一覧',arms_path %></td></tr>
+      <tr><td>防具一覧</td></tr>
+      <tr><td><%= link_to 'モンスター一覧', monsters_path %></td></tr>
+      <tr><td>スキル一覧</td></tr>
+
+    </table>
+    <table class = "footer2">
+      <th><h2>初心者ガイド</h2></th>
+      <tr>序盤の進め方</tr>
+      <tr>HRの上げ方</tr>
+      <tr>強化素材</tr>
+      <tr>狩玉の入手方法</tr>
+    </table>
   </div>
 
 
