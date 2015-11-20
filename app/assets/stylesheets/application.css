@@ -14,90 +14,34 @@
  *= require_self
  */
 
-a{
+
+/*body */
+body { margin:0px; }
+
+
+/*ヘッダー*/
+
+.header a{
     text-decoration:none;
 }
 
-a:hover{
-
+.header a:hover{
+    background:#ff4275;
 }
-a:active{
-    background-color:#999999;
-}
-
-
-a:visited{
-
+.header a:active{
+    background-color:#ff2264;
 }
 
-.footer{
-    border-top:solid 1px black;
-    clear:left;
-
-}
-.menu{
-    background-color:#ff4275;
-}
-.footer table{
-    width:100%;
-    border-collapse:collapse;
-    border:solid 1px black ;
-
-<<<<<<< HEAD
-=======
-    background-color: white;
->>>>>>> 2d5c89f1dce2209ea023fe110fd6968ad10e075c
+.header a:visited{
+color:white;
 }
 
-.footer  td{
-    padding-left:10px;
-    height:125px;
-    font-size:35px;
-    border-bottom:solid 1px #999999;
-<<<<<<< HEAD
-
-=======
-    color:black;
->>>>>>> 2d5c89f1dce2209ea023fe110fd6968ad10e075c
+.header table th:active{
+    background-color:#ff2264;
 }
-
-.footer h1{
-    height:125px;
-    align-content:center;
-    background-color:#adafff;
-    margin:0 auto;
+.header table td:active{
+    background-color:#ff2264;
 }
-.main{
-    margin: 0 auto;
-    clear:left;
-
-
-}
-.main table{
-    border-collapse:collapse;
-    border:solid 1px;
-
-    background-color: RED;
-
-}
-
-.main table li{
-
-    margin:10px;
-}
-.main th {
-    border: solid 1px;
-
-}
-.main td{
-    border:solid 1px;
-
-}
-
-
-
-
-
 
 .header{
     width:100%;
@@ -112,35 +56,79 @@ a:visited{
 
 }
 .header-image{
-    height:200px;
+    height:100%;
+
 }
 .header table{
     border-collapse:collapse;
     width:100%;
     margin-left:0 auto;
     margin-right:0 auto;
-    height:125px;
-    background-color:#999999;
+    height:100px;
+   
 
 }
-body { margin:0px; }
+
+
 
 .header table th{
     font-size:35px;
     margin:0px;
+    height:100px;
     width:25%;
     background-color:#ff4275;
     color:white;
     border:solid #ffffff 1px;
     font-weight: normal;
-
-
+     border-bottom-color: #de1260;
+     border-bottom-width: 9px;
 
 }
 
-table th:active{
-    background-color:#999999;
+/*メイン*/
+.main{
+    margin: 0 auto;
+    clear:left;
 }
-table td:active{
-    background-color:#999999;
+
+
+
+/*フッター*/
+.footer{
+
+    clear:left;
+
 }
+
+
+}
+.footer table{
+    width:100%;
+    border-collapse:collapse;
+    background-color: white;
+}
+
+.footer  td{
+    padding-left:10px;
+    height:125px;
+    font-size:35px;
+    color:black;
+}
+
+.footer h1{
+    height:60px;
+    padding-top:30px;
+    font-size:35px;
+    align-content:center;
+    text-align: center;
+    background-color:#ff4275;
+    margin:0 auto;
+    color:white; 
+}
+
+
+
+
+
+
+
