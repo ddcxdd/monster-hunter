@@ -76,17 +76,10 @@ a:visited{
 .main table{
     border-collapse:collapse;
     border:solid 1px;
-
-    background-color: RED;
-
 }
-
-.main table li{
-
-    margin:10px;
-}
-.main th {
+.main  th {
     border: solid 1px;
+    width:10%;
 
 }
 .main td{
