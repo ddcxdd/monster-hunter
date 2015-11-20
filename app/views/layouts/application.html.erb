@@ -8,7 +8,7 @@
 </head>
 
 <div class="header">
-  <div class="header-left"><%= image_tag('header.png')  %></div>
+  <div class="header-image"><%= image_tag('http://www.mh-xr.jp/img/thumb.jpg')  %></div>
   <table>
     <th><%= link_to "メニュー",:anchor =>"footer3" %></th>
     <th>人気記事</th>
@@ -22,15 +22,12 @@
 
 
 
-
-
-
   <div class = "main">
     <%= yield %>
   </div>
 
   <div class="footer" id="footer3">
-    <h1>メニュー</h1>
+    <h1 class = "menu">メニュー</h1>
     <table >
       <tr><td><%= link_to '<tr><td>トップページ', root_path %></td></tr>
       <tr><td><%= link_to '武器一覧',arms_path %></td></tr>
@@ -57,6 +54,5 @@
          <% end%>
           </table>
   </div>
-
 </body>
 </html>
