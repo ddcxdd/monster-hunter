@@ -14,9 +14,14 @@
  *= require_self
  */
 a{
+    text-decoration:none;
+}
+
+a:visited{
     color:white;
 }
 .footer{
+    border-top:solid 1px black;
     clear:left;
 
 }
@@ -41,9 +46,7 @@ a{
 
 .main{
     margin: 0 auto;
-    height:1500px;
     clear:left;
-    background-color:#999999;
 
 
 }
