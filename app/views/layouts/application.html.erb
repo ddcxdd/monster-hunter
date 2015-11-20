@@ -30,7 +30,7 @@
   </div>
 
   <div class="footer" id="footer3">
-    <h2>メニュー</h2>
+    <h1>メニュー</h1>
     <table >
       <tr><td><%= link_to 'トップページ', root_path %></td></tr>
       <tr><td><%= link_to '武器一覧',arms_path %></td></tr>
@@ -39,13 +39,23 @@
       <tr><td>スキル一覧</td></tr>
 
     </table>
+    <h1>初心者ガイド</h1>
     <table class = "footer2">
-      <th><h2>初心者ガイド</h2></th>
-      <tr>序盤の進め方</tr>
-      <tr>HRの上げ方</tr>
-      <tr>強化素材</tr>
-      <tr>狩玉の入手方法</tr>
-    </table>
+      <tr><td>序盤の進め方</td></tr>
+      <tr><td>HRの上げ方</td></tr>
+      <tr><td>強化素材</td></tr>
+      <tr><td>狩玉の入手方法</td></tr>
+        </table>
+
+
+        <h1>人気記事</h1>
+        <table>
+        <% @notes.each do |note| %>
+
+          <tr><td><%= link_to note.title, note_path(note.id) %></td></tr>
+
+         <% end%>
+          </table>
   </div>
 
 </body>
