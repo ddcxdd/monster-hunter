@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :arms
   get 'home/top'
   root 'home#top'
-
+  resources :notes
   resources :monsters
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
