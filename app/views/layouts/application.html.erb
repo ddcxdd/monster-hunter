@@ -7,28 +7,46 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
   <div class="header">
-    <div class="header-left">エクスプロア攻略</div>
+    <div class="header-left"><%= link_to image_tag('header.png') ,root_path %></div>
     <div class="header-right"></div>
   </div>
-  <div class = "main">
+
+
 
   <div class="sidebar">
     <%= link_to image_tag('logo.jpg',:width => "200px") ,root_path %>
-  <ul style="list-style:none;">
-    <li><h2>メニュー</h2></li>
-   <li><%= link_to 'トップページ', root_path %></li>
-    <li><%= link_to '武器一覧',arms_path %></li>
-    <li>防具一覧</li>
-    <li><%= link_to 'モンスター一覧', monsters_path %></li>
+    <h2>メニュー</h2>
+    <ul class = "side1" style="list-style:none;">
+      <li><h2>攻略メニュー</h2></li>
+      <li><%= link_to 'トップページ', root_path %></li>
+      <li><%= link_to '武器一覧',arms_path %></li>
+      <li>防具一覧</li>
+      <li><%= link_to 'モンスター一覧', monsters_path %></li>
+      <li>スキル一覧</li>
 
-  </ul>
+    </ul>
+    <ul class = "side2">
+      <li><h2>初心者ガイド</h2></li>
+      <li>序盤の進め方</li>
+      <li>HRの上げ方</li>
+      <li>強化素材</li>
+      <li>狩玉の入手方法</li>
+    </ul>
   </div>
 
 
-
-  <%= yield %>
-
+  <div class = "main">
+    <%= yield %>
   </div>
+
+  <div class="sidebar-right">
+    <h2>人気記事</h2>
+    <ul class = "ninki" style="list-style:none;">
+    </ul>
+  </div>
+
+
 </body>
 </html>
