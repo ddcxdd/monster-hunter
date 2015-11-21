@@ -203,7 +203,39 @@ color:white;
 
 
 
-<<<<<<< HEAD
+
+.footer a{
+    text-decoration:none;
+    color:#2E2F30;
+}
+
+.footer a:hover{
+    background:white;
+}
+.footer a:active{
+    background-color:#eeeeee;
+}
+
+
+
+.footer-bottom{
+    background-color:#ff4275;
+    height:200px;
+    margin:auto;
+    padding-left:15%;
+    padding-right:15%;
+    padding-top:50px;
+    color:white;
+    text-align:center;
+}
+
+.footer-bottom li{
+    width:20%;
+    float:left;
+    margin-bottom:10px;
+}
+
+
 /*ページトップへ */
 .kotei{
     position:fixed;
@@ -222,36 +254,3 @@ color:white;
     height:100%;
     width:100%;
     }
-=======
-.footer a{
-    text-decoration:none;
-    color:#2E2F30;
-}
-
-.footer a:hover{
-    background:white;
-}
-.footer a:active{
-    background-color:#eeeeee;
-}
-
-
-
-.footer-bottom{
-    background-color:#ff4275;
->>>>>>> f0cb3d5b6a354e71f81197614695650ab6c8eb86
-
-    height:200px;
-    margin:auto;
-    padding-left:15%;
-    padding-right:15%;
-    padding-top:50px;
-    color:white;
-    text-align:center;
-}
-
-.footer-bottom li{
-    width:20%;
-    float:left;
-    margin-bottom:10px;
-}
