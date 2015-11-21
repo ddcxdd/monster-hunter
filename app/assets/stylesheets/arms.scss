@@ -2,10 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-td{
+.main td{
   border-collapse:collapse;
   border:solid 1px black;
-  text-align:center
+  text-align:center;
+  font-size:35px;
+  height: 40px;
+
 
 }
 

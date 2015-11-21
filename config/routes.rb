@@ -4,21 +4,8 @@ Rails.application.routes.draw do
   root 'home#top'
   resources :notes
   resources :monsters
-  get 'arms/taiken' => 'arms#taiken'
-  get 'arms/tachi' => 'arms#tachi'
-  get 'arms/katate' => 'arms#katate'
-  get 'arms/souken' => 'arms#souken'
-  get 'arms/hammer' => 'arms#hammer'
-  get 'arms/hue' => 'arms#hue'
-  get 'arms/lance' => 'arms#lance'
-  get 'arms/gunlance' => 'arms#gunlance'
-  get 'arms/slash' => 'arms#slash'
-  get 'arms/light' => 'arms#light'
-  get 'arms/heaby' => 'arms#heaby'
-  get 'arms/yumi' => 'arms#yumi'
-  get 'arms/charge' => 'arms#charge'
 
-
+  get 'arms/:arm_type' => 'arms#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

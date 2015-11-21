@@ -49,19 +49,12 @@ table a {
     background-color:#ff2264;
 }
 
-.main table{
-    border-collapse:collapse;
-    border:solid 1px;
-}
-.main  th {
-    border: solid 1px;
-    width:10%;
 
-}
+
 .header a:visited{
     color:white;
-background-color:#ff2264;
-color:white;
+    background-color:#ff2264;
+    color:white;
 }
 
 
@@ -131,10 +124,10 @@ color:white;
 .main table{
     border-collapse:collapse;
     border:solid 1px;
+    width:100%;
 }
 .main  th {
     border: solid 1px;
-    width: 10%;
 }
 
 

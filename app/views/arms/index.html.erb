@@ -4,32 +4,32 @@
 
 <table>
   <thead>
-    <tr>
-      arm.order("rare")
+  <tr>
 
-      <th>名前</th>
-      <th>スキル</th>
-      <th>属性</th>
-      <th>レア度</th>
-      <th>最終攻撃力</th>
 
-    </tr>
+    <th>名前</th>
+    <th>スキル</th>
+    <th>属性</th>
+    <th>レア度</th>
+    <th>最終攻撃力</th>
+
+  </tr>
   </thead>
 
   <tbody>
-    <% @arms.each do |arm| %>
-      <tr>
-        <td><%= arm.name %></td>
-        <td><%= arm.skill %></td>
-        <td><%= arm.zokusei %></td>
-        <td><%= arm.rare %></td>
-        <td><%= arm.max_attack %></td>
-
-      </tr>
-    <% end %>
+  <% @arms.each do |arm| %>
+      <% if arm.arm_type==@arm_type  then %>
+          <tr>
+            <td><%= arm.name %></td>
+            <td><%= arm.skill %></td>
+            <td><%= arm.zokusei %></td>
+            <td><%= arm.rare %></td>
+            <td><%= arm.max_attack %></td>
+          </tr>
+      <%end%>
+  <% end %>
   </tbody>
 </table>
 
 <br>
 
-<%= link_to 'New Arm', new_arm_path %>
