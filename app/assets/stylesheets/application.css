@@ -28,7 +28,7 @@ body { margin:0px; }
 .header a:hover{
     background:#ff4275;
 }
-<<<<<<< HEAD
+
 .main table{
     border-collapse:collapse;
     border:solid 1px;
@@ -36,15 +36,13 @@ body { margin:0px; }
 .main  th {
     border: solid 1px;
     width:10%;
-=======
-.header a:active{
-    background-color:#ff2264;
-}
 
+}
 .header a:visited{
+    background-color:#ff2264;
 color:white;
 }
->>>>>>> e6b320dda1ca813834107fb26f7ff82eabfa57ff
+
 
 .header table th:active{
     background-color:#ff2264;
