@@ -21,15 +21,32 @@
 /*body */
 body { margin:0px; }
 
+li {
+    list-style: none;
+}
+
+
+table a {
+    display: block;
+    width:100%;
+    height:100%;
+}
+
 
 /*ヘッダー*/
 
 .header a{
-    text-decoration:none;
+    text-decoration:none
+
 }
 
 .header a:hover{
+    color:white;
     background:#ff4275;
+}
+.header a:active{
+    color:white;
+    background-color:#ff2264;
 }
 
 .main table{
@@ -42,7 +59,8 @@ body { margin:0px; }
 
 }
 .header a:visited{
-    background-color:#ff2264;
+    color:white;
+background-color:#ff2264;
 color:white;
 }
 
@@ -76,25 +94,33 @@ color:white;
     margin-left:0 auto;
     margin-right:0 auto;
     height:100px;
-   
+
 
 }
 
 
 
+
 .header table th{
+
     font-size:35px;
     margin:0px;
     height:100px;
     width:25%;
     background-color:#ff4275;
     color:white;
-    border:solid #ffffff 1px;
+    border-bottom:#de1260 9px solid;
+    border-right:solid #ffffff 1px;
+    border-top:solid #ffffff 1px;
+    border-left:solid #ffffff 1px;
     font-weight: normal;
-     border-bottom-color: #de1260;
-     border-bottom-width: 9px;
+    /*セルの中央に配置*/
+    line-height:100px;
+
 
 }
+
+
 
 /*メイン*/
 .main{
@@ -102,11 +128,42 @@ color:white;
     clear:left;
 }
 
+.main table{
+    border-collapse:collapse;
+    border:solid 1px;
+}
+.main  th {
+    border: solid 1px;
+    width: 10%;
+}
+
 
 
 /*フッター*/
-.footer{
+.arm-menu li{
+    width:40%;
+    float:left;
+    margin-right:20px;
+    margin-top:20px;
+    font-size:20px;
+    padding-left:10px;
+    border-bottom:#eeeeee solid 1px;
+}
 
+.bougu-menu li{
+    width:40%;
+    float:left;
+    margin-right:20px;
+    margin-top:20px;
+    font-size:20px;
+    padding-left:10px;
+    border-bottom:#eeeeee solid 1px;
+}
+
+
+
+.footer{
+    width:100%;
     clear:left;
 
 }
@@ -114,31 +171,39 @@ color:white;
 
 }
 .footer table{
-    width:100%;
     border-collapse:collapse;
     background-color: white;
+    width:100%;
 }
 
-.footer  td{
+.footer  td {
+    width:2000px;
+    margin:0;
     padding-left:10px;
-    height:125px;
+    height:100px;
+    border-bottom: solid 4px #eeeeee;
+
     font-size:35px;
-    color:black;
+    /*セルの中央に配置*/
+    line-height:100px;
 }
+
+
 
 .footer h1{
+    border-bottom:#de1260 9px solid;
     height:60px;
-    padding-top:30px;
+    padding-top:40px;
     font-size:35px;
     align-content:center;
     text-align: center;
     background-color:#ff4275;
-    margin:0 auto;
-    color:white; 
+    color:white;
 }
 
 
 
+<<<<<<< HEAD
 /*ページトップへ */
 .kotei{
     position:fixed;
@@ -157,5 +222,36 @@ color:white;
     height:100%;
     width:100%;
     }
+=======
+.footer a{
+    text-decoration:none;
+    color:#2E2F30;
+}
+
+.footer a:hover{
+    background:white;
+}
+.footer a:active{
+    background-color:#eeeeee;
+}
 
 
+
+.footer-bottom{
+    background-color:#ff4275;
+>>>>>>> f0cb3d5b6a354e71f81197614695650ab6c8eb86
+
+    height:200px;
+    margin:auto;
+    padding-left:15%;
+    padding-right:15%;
+    padding-top:50px;
+    color:white;
+    text-align:center;
+}
+
+.footer-bottom li{
+    width:20%;
+    float:left;
+    margin-bottom:10px;
+}
