@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>武器一覧</h1>
+
+<table>
+  <thead>
+  <tr>
+    arm.order("rare")
+
+    <th>名前</th>
+    <th>スキル</th>
+    <th>属性</th>
+    <th>レア度</th>
+    <th>最終攻撃力</th>
+
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @arms.each do |arm| %>
+  <% if arm.arm_type =="taiken"  then %>
+      <tr>
+        <td><%= arm.name %></td>
+        <td><%= arm.skill %></td>
+        <td><%= arm.zokusei %></td>
+        <td><%= arm.rare %></td>
+        <td><%= arm.max_attack %></td>
+      </tr>
+  <%end%>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
