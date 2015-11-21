@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20151120085218) do
     t.string   "comment",     limit: 255
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
+    t.string   "arm_type",    limit: 255
   end
 
   create_table "monsters", force: :cascade do |t|
