@@ -36,13 +36,14 @@ table a {
 /*ヘッダー*/
 
 .header a{
+    color:white;
     text-decoration:none
 
 }
 
 .header a:hover{
     color:white;
-    background:#ff4275;
+    background:#ff2264;
 }
 .header a:active{
     color:white;
