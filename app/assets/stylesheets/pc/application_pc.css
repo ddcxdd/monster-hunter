@@ -1,22 +1,17 @@
-
-
 /*body */
-
 
 body {
     margin: 0px;
-    width:960px;
-    margin-left:auto;
-    margin-right:auto;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(45deg,
-    #fff 25%,#cccccc 25%,
-    #cccccc 50%,#fff 50%,
-    #fff 75%,#cccccc 75%,
+    #fff 25%, #cccccc 25%,
+    #cccccc 50%, #fff 50%,
+    #fff 75%, #cccccc 75%,
     #cccccc);
-    background-size:6px 6px;
+    background-size: 6px 6px;
 }
-
-
 
 li {
     list-style: none;
@@ -28,6 +23,17 @@ table a {
     height: 100%;
 }
 
+.midashi{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:#CCCCCC;
+    height:30px;
+    padding-top:10px;
+    padding-left:5px;
+    font-size:15px;
+
+}
 /*ヘッダー*/
 
 .header a {
@@ -44,7 +50,7 @@ table a {
 .header a:active {
     color: white;
     background-color: #ff2264;
-    border-bottom:0px;
+    border-bottom: 0px;
 
 }
 
@@ -99,30 +105,31 @@ table a {
     border-right: solid #ffffff 1px;
     border-top: solid #ffffff 1px;
     border-left: solid #ffffff 1px;
-    border-bottom:0px;
+    border-bottom: 0px;
     font-weight: normal;
     /*セルの中央に配置*/
     line-height: 50px;
 }
+
 .header table td {
 
     width: 20%;
     background-color: #de1260;
     height: 5px;
-    margin:0px;
-    padding:0px;
-    border-right:1px white solid;
-    border-left:1px white solid;
+    margin: 0px;
+    padding: 0px;
+    border-right: 1px white solid;
+    border-left: 1px white solid;
 }
 
 /*メイン*/
 .main {
-    float:left;
-    width:52%;
-    margin-left:2%;
-    margin-right:2%;
-    margin-top:10px;
-    background-color:white;
+    float: left;
+    width: 52%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 10px;
+    background-color: white;
 }
 
 .main table {
@@ -134,19 +141,34 @@ table a {
 .main th {
     border: solid 1px;
 }
-.article-title{
-    width:100%;
-    height:25px;
-    background-color:#ff4275;
-    margin-top:0px;
-    color:white;
-    text-align:center;
+
+.article-title {
+    width: 100%;
+    height: 25px;
+    background-color: #ff4275;
+    margin-top: 0px;
+    color: white;
+    text-align: center;
     border-bottom: #de1260 5px solid;
     padding-top: 15px;
-    font-size:20px;
-
+    font-size: 20px;
 }
 
+.popular-article ul{
+    padding:3px;
+}
+
+
+.popular-article img{
+    width:100%;
+}
+
+.popular-article li{
+    padding:0;
+    float:left;
+    width:28%;
+    margin-right:5%;
+}
 /*サイドバー左*/
 .arm-menu li {
     margin-right: 0px;
@@ -165,30 +187,28 @@ table a {
 }
 
 .sidebar-left {
-    float:left;
+    float: left;
     width: 20%;
-    height:100%;
-    background-color:white;
-    margin-left:2%;
-    margin-top:10px;
-    padding-top:0px;
+    height: 100%;
+    background-color: white;
+    margin-left: 2%;
+    margin-top: 10px;
+    padding-top: 0px;
 
 }
-
 
 .sidebar-left table {
     border-collapse: collapse;
-    background-color:white;
+    background-color: white;
     width: 100%;
-    margin-top:0px;
+    margin-top: 0px;
 }
-
 
 .sidebar-left td {
     width: 100%;
     margin: 0;
     padding-left: 10px;
-    padding-top:10px;
+    padding-top: 10px;
     height: 20px;
     border-bottom: solid 4px #eeeeee;
 
@@ -201,12 +221,12 @@ table a {
     border-bottom: #de1260 5px solid;
     padding-top: 15px;
     font-size: 20px;
-    height:25px;
+    height: 25px;
     align-content: center;
     text-align: center;
     background-color: #ff4275;
     color: white;
-    margin-top:0px;
+    margin-top: 0px;
 
 }
 
@@ -223,38 +243,36 @@ table a {
     background-color: #eeeeee;
 }
 
-
 /* サイドバー右*/
 
 .sidebar-right {
-    float:right;
+    float: right;
     width: 20%;
-    background-color:white;
-    margin-right:2%;
-    margin-top:10px;
+    background-color: white;
+    margin-right: 2%;
+    margin-top: 10px;
 }
-
 
 .sidebar-right table {
     border-collapse: collapse;
     background-color: white;
     width: 100%;
-    padding-left:0px;
-    margin-left:0px;
+    padding-left: 0px;
+    margin-left: 0px;
 
 }
 
 .sidebar-right td {
     width: 100%;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     padding-left: 0px;
     height: 30px;
     border-bottom: solid 4px #eeeeee;
-    padding-left:0px;
+    padding-left: 0px;
     font-size: 35px;
     /*セルの中央に配置*/
-    background-color:yellow;
+    background-color: yellow;
 
 }
 
@@ -267,7 +285,7 @@ table a {
     text-align: center;
     background-color: #ff4275;
     color: white;
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 .sidebar-right a {
@@ -283,18 +301,21 @@ table a {
     background-color: #eeeeee;
 }
 
-.sidebar-right img{
-    width:100%;
-    margin-left:0px;
-    padding-left:0px;
+.sidebar-right img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 
 }
 
-
+.sidebar-right ul{
+    margin:0px;
+    padding:5px;
+}
 
 
 .footer-bottom {
-    clear:left;
+    clear: left;
     background-color: #ff4275;
     height: 200px;
     margin: auto;

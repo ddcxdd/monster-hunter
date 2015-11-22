@@ -14,39 +14,39 @@
 ActiveRecord::Schema.define(version: 20151120085218) do
 
   create_table "arms", force: :cascade do |t|
-    t.string   "name",        limit: 255
-    t.string   "skill",       limit: 255
-    t.string   "zokusei",     limit: 255
-    t.integer  "rare",        limit: 4
-    t.integer  "max_level",   limit: 4
-    t.string   "series",      limit: 255
-    t.integer  "attack",      limit: 4
-    t.integer  "max_attack",  limit: 4
-    t.string   "item",        limit: 255
-    t.integer  "item_number", limit: 4
-    t.float    "hyouka",      limit: 24
-    t.string   "comment",     limit: 255
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
-    t.string   "arm_type",    limit: 255
+    t.string "name", limit: 255
+    t.string "skill", limit: 255
+    t.string "zokusei", limit: 255
+    t.integer "rare", limit: 4
+    t.integer "max_level", limit: 4
+    t.string "series", limit: 255
+    t.integer "attack", limit: 4
+    t.integer "max_attack", limit: 4
+    t.string "item", limit: 255
+    t.integer "item_number", limit: 4
+    t.float "hyouka", limit: 24
+    t.string "comment", limit: 255
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "arm_type", limit: 255
   end
 
   create_table "monsters", force: :cascade do |t|
-    t.string   "name",       limit: 255
-    t.integer  "fire",       limit: 4
-    t.integer  "water",      limit: 4
-    t.integer  "thunder",    limit: 4
-    t.integer  "ice",        limit: 4
-    t.integer  "soil",       limit: 4
-    t.string   "comment",    limit: 255
-    t.datetime "created_at",             null: false
-    t.datetime "updated_at",             null: false
+    t.string "name", limit: 255
+    t.integer "fire", limit: 4
+    t.integer "water", limit: 4
+    t.integer "thunder", limit: 4
+    t.integer "ice", limit: 4
+    t.integer "soil", limit: 4
+    t.string "comment", limit: 255
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "notes", force: :cascade do |t|
-    t.string "name",  limit: 255
+    t.string "name", limit: 255
     t.string "title", limit: 255
-    t.string "body",  limit: 255
+    t.string "body", limit: 255
   end
 
 end

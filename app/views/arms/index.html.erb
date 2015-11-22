@@ -18,7 +18,7 @@
 
   <tbody>
   <% @arms.each do |arm| %>
-      <% if arm.arm_type==@arm_type  then %>
+      <% if arm.arm_type==@arm_type then %>
           <tr>
             <td><%= arm.name %></td>
             <td><%= arm.skill %></td>
@@ -26,7 +26,7 @@
             <td><%= arm.rare %></td>
             <td><%= arm.max_attack %></td>
           </tr>
-      <%end%>
+      <% end %>
   <% end %>
   </tbody>
 </table>

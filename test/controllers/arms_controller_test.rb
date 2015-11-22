@@ -18,7 +18,7 @@ class ArmsControllerTest < ActionController::TestCase
 
   test "should create arm" do
     assert_difference('Arm.count') do
-      post :create, arm: { attack: @arm.attack, comment: @arm.comment, hyouka: @arm.hyouka, item: @arm.item, item_number: @arm.item_number, max_attack: @arm.max_attack, max_level: @arm.max_level, name: @arm.name, rare: @arm.rare, series: @arm.series, skill: @arm.skill, zokusei: @arm.zokusei }
+      post :create, arm: {attack: @arm.attack, comment: @arm.comment, hyouka: @arm.hyouka, item: @arm.item, item_number: @arm.item_number, max_attack: @arm.max_attack, max_level: @arm.max_level, name: @arm.name, rare: @arm.rare, series: @arm.series, skill: @arm.skill, zokusei: @arm.zokusei}
     end
 
     assert_redirected_to arm_path(assigns(:arm))
@@ -35,7 +35,7 @@ class ArmsControllerTest < ActionController::TestCase
   end
 
   test "should update arm" do
-    patch :update, id: @arm, arm: { attack: @arm.attack, comment: @arm.comment, hyouka: @arm.hyouka, item: @arm.item, item_number: @arm.item_number, max_attack: @arm.max_attack, max_level: @arm.max_level, name: @arm.name, rare: @arm.rare, series: @arm.series, skill: @arm.skill, zokusei: @arm.zokusei }
+    patch :update, id: @arm, arm: {attack: @arm.attack, comment: @arm.comment, hyouka: @arm.hyouka, item: @arm.item, item_number: @arm.item_number, max_attack: @arm.max_attack, max_level: @arm.max_level, name: @arm.name, rare: @arm.rare, series: @arm.series, skill: @arm.skill, zokusei: @arm.zokusei}
     assert_redirected_to arm_path(assigns(:arm))
   end
 

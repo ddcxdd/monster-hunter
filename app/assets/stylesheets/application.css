@@ -14,13 +14,10 @@
  *= require_self
  */
 
-
-
-
-
-
 /*body */
-body { margin:0px; }
+body {
+    margin: 0px;
+}
 
 li {
     list-style: none;
@@ -28,222 +25,204 @@ li {
 
 table a {
     display: block;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
 }
-
 
 /*ヘッダー*/
 
-.header a{
-    color:white;
-    text-decoration:none
+.header a {
+    color: white;
+    text-decoration: none
 
 }
 
-.header a:hover{
-    color:white;
-    background:#ff2264;
-}
-.header a:active{
-    color:white;
-    background-color:#ff2264;
+.header a:hover {
+    color: white;
+    background: #ff2264;
 }
 
-
-
-.header a:visited{
-    color:white;
-    background-color:#ff2264;
-    color:white;
+.header a:active {
+    color: white;
+    background-color: #ff2264;
 }
 
-
-.header table th:active{
-    background-color:#ff2264;
-}
-.header table td:active{
-    background-color:#ff2264;
+.header a:visited {
+    color: white;
+    background-color: #ff2264;
+    color: white;
 }
 
-.header{
-    width:100%;
+.header table th:active {
+    background-color: #ff2264;
 }
 
-.header img{
+.header table td:active {
+    background-color: #ff2264;
+}
+
+.header {
+    width: 100%;
+}
+
+.header img {
 
     display: block;
-    width:100%;
-    height:100%;
-    background-color:white;
-
-}
-.header-image{
-    height:100%;
-
-}
-.header table{
-    border-collapse:collapse;
-    width:100%;
-    margin-left:0 auto;
-    margin-right:0 auto;
-
+    width: 100%;
+    height: 100%;
+    background-color: white;
 
 }
 
+.header-image {
+    height: 100%;
 
+}
 
+.header table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
 
-.header table th{
+}
 
-    font-size:35px;
-    margin:0px;
-    height:100px;
-    width:25%;
-    background-color:#ff4275;
-    color:white;
-    border-bottom:#de1260 9px solid;
-    border-right:solid #ffffff 1px;
-    border-top:solid #ffffff 1px;
-    border-left:solid #ffffff 1px;
+.header table th {
+
+    font-size: 35px;
+    margin: 0px;
+    height: 100px;
+    width: 25%;
+    background-color: #ff4275;
+    color: white;
+    border-bottom: #de1260 9px solid;
+    border-right: solid #ffffff 1px;
+    border-top: solid #ffffff 1px;
+    border-left: solid #ffffff 1px;
     font-weight: normal;
     /*セルの中央に配置*/
-    line-height:100px;
-
+    line-height: 100px;
 
 }
 
-
-
 /*メイン*/
-.main{
+.main {
     margin: 0 auto;
 }
 
-.main table{
-    border-collapse:collapse;
-    border:solid 1px;
-    width:100%;
+.main table {
+    border-collapse: collapse;
+    border: solid 1px;
+    width: 100%;
 }
-.main  th {
+
+.main th {
     border: solid 1px;
 }
 
-
-
 /*フッター*/
-.arm-menu li{
-    width:40%;
-    float:left;
-    margin-right:20px;
-    margin-top:20px;
-    font-size:20px;
-    padding-left:10px;
-    border-bottom:#eeeeee solid 1px;
+.arm-menu li {
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    border-bottom: #eeeeee solid 1px;
 }
 
-.bougu-menu li{
-    width:40%;
-    float:left;
-    margin-right:20px;
-    margin-top:20px;
-    font-size:20px;
-    padding-left:10px;
-    border-bottom:#eeeeee solid 1px;
+.bougu-menu li {
+    width: 40%;
+    float: left;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    padding-left: 10px;
+    border-bottom: #eeeeee solid 1px;
 }
 
-
-
-.footer{
-    width:100%;
-    clear:left;
+.footer {
+    width: 100%;
+    clear: left;
 
 }
 
-
 }
-.footer table{
-    border-collapse:collapse;
+.footer table {
+    border-collapse: collapse;
     background-color: white;
-    width:100%;
+    width: 100%;
 }
 
-.footer  td {
-    width:2000px;
-    margin:0;
-    padding-left:10px;
-    height:100px;
+.footer td {
+    width: 2000px;
+    margin: 0;
+    padding-left: 10px;
+    height: 100px;
     border-bottom: solid 4px #eeeeee;
 
-    font-size:35px;
+    font-size: 35px;
     /*セルの中央に配置*/
-    line-height:100px;
+    line-height: 100px;
 }
 
-
-
-.footer h1{
-    border-bottom:#de1260 9px solid;
-    height:60px;
-    padding-top:40px;
-    font-size:35px;
-    align-content:center;
+.footer h1 {
+    border-bottom: #de1260 9px solid;
+    height: 60px;
+    padding-top: 40px;
+    font-size: 35px;
+    align-content: center;
     text-align: center;
-    background-color:#ff4275;
-    color:white;
+    background-color: #ff4275;
+    color: white;
 }
 
-
-
-
-.footer a{
-    text-decoration:none;
-    color:#2E2F30;
+.footer a {
+    text-decoration: none;
+    color: #2E2F30;
 }
 
-.footer a:hover{
-    background:white;
-}
-.footer a:active{
-    background-color:#eeeeee;
+.footer a:hover {
+    background: white;
 }
 
-
-
-.footer-bottom{
-    background-color:#ff4275;
-    height:200px;
-    margin:auto;
-    padding-left:15%;
-    padding-right:15%;
-    padding-top:50px;
-    color:white;
-    text-align:center;
+.footer a:active {
+    background-color: #eeeeee;
 }
 
-.footer-bottom li{
-    width:20%;
-    float:left;
-    margin-bottom:10px;
+.footer-bottom {
+    background-color: #ff4275;
+    height: 200px;
+    margin: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
 }
 
+.footer-bottom li {
+    width: 20%;
+    float: left;
+    margin-bottom: 10px;
+}
 
 /*ページトップへ */
-.kotei{
-    position:fixed;
-    bottom:0px;
-    font-size:40px;
+.kotei {
+    position: fixed;
+    bottom: 0px;
+    font-size: 40px;
     background-color: #eeeeee;
-    width:100%;
-    height:70px;
-    padding-top:35px;
+    width: 100%;
+    height: 70px;
+    padding-top: 35px;
     text-align: center
 
 }
 
-.kotei a{
-    display:block;
-    height:100%;
-    width:100%;
+.kotei a {
+    display: block;
+    height: 100%;
+    width: 100%;
 }
 

@@ -18,7 +18,7 @@ class MonstersControllerTest < ActionController::TestCase
 
   test "should create monster" do
     assert_difference('Monster.count') do
-      post :create, monster: { comment: @monster.comment, fire: @monster.fire, ice: @monster.ice, name: @monster.name, soil: @monster.soil, thunder: @monster.thunder, water: @monster.water }
+      post :create, monster: {comment: @monster.comment, fire: @monster.fire, ice: @monster.ice, name: @monster.name, soil: @monster.soil, thunder: @monster.thunder, water: @monster.water}
     end
 
     assert_redirected_to monster_path(assigns(:monster))
@@ -35,7 +35,7 @@ class MonstersControllerTest < ActionController::TestCase
   end
 
   test "should update monster" do
-    patch :update, id: @monster, monster: { comment: @monster.comment, fire: @monster.fire, ice: @monster.ice, name: @monster.name, soil: @monster.soil, thunder: @monster.thunder, water: @monster.water }
+    patch :update, id: @monster, monster: {comment: @monster.comment, fire: @monster.fire, ice: @monster.ice, name: @monster.name, soil: @monster.soil, thunder: @monster.thunder, water: @monster.water}
     assert_redirected_to monster_path(assigns(:monster))
   end
 
