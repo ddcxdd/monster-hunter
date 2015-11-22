@@ -96,15 +96,25 @@ table a {
     height: 50px;
     background-color: #ff4275;
     color: white;
-    border-bottom: #de1260 5px solid;
     border-right: solid #ffffff 1px;
     border-top: solid #ffffff 1px;
     border-left: solid #ffffff 1px;
+    border-bottom:0px;
     font-weight: normal;
     /*セルの中央に配置*/
     line-height: 50px;
-
 }
+.header table td {
+
+    width: 20%;
+    background-color: #de1260;
+    height: 5px;
+    margin:0px;
+    padding:0px;
+    border-right:1px white solid;
+    border-left:1px white solid;
+}
+
 /*メイン*/
 .main {
     float:left;
@@ -123,6 +133,18 @@ table a {
 
 .main th {
     border: solid 1px;
+}
+.article-title{
+    width:100%;
+    height:25px;
+    background-color:#ff4275;
+    margin-top:0px;
+    color:white;
+    text-align:center;
+    border-bottom: #de1260 5px solid;
+    padding-top: 15px;
+    font-size:20px;
+
 }
 
 /*サイドバー左*/
@@ -179,7 +201,7 @@ table a {
     border-bottom: #de1260 5px solid;
     padding-top: 15px;
     font-size: 20px;
-    height:30px;
+    height:25px;
     align-content: center;
     text-align: center;
     background-color: #ff4275;
@@ -238,7 +260,7 @@ table a {
 
 .sidebar-right h1 {
     border-bottom: #de1260 5px solid;
-    height: 30px;
+    height: 25px;
     padding-top: 15px;
     font-size: 20px;
     align-content: center;

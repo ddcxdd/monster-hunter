@@ -20,11 +20,12 @@
 <div class="header" id="footer1">
   <div class="header-image"><%= image_tag('http://www.mh-xr.jp/img/thumb.jpg')  %></div>
   <table>
-    <th><%= link_to "メニュaaaaー",:anchor =>"footer-menu" %></th>
+    <th><%= link_to "メニュー",:anchor =>"footer-menu" %></th>
     <th><%= link_to "人気記事",:anchor =>"footer-ninki" %></th>
     <th><%= link_to "Q&A" ,root_path %></th>
     <th><%= link_to"検索",root_path %></th>
     <th><%= link_to "攻略のコツ",root_path %></th>
+    <tr><td></td><td></td><td></td><td></td><td></td></tr>
   </table>
 
 </div>
@@ -88,6 +89,7 @@
 
 
 <div class = "main">
+  <h1 class ="article-title">EXPLORE攻略記事</h1>
   <%= yield %>
 </div>
 
