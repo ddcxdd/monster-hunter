@@ -1,0 +1,53 @@
+<%= form_for(@bougu) do |f| %>
+  <% if @bougu.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bougu.errors.count, "error") %> prohibited this bougu from being saved:</h2>
+
+      <ul>
+      <% @bougu.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :position %><br>
+    <%= f.text_field :position %>
+  </div>
+  <div class="field">
+    <%= f.label :rare %><br>
+    <%= f.text_field :rare %>
+  </div>
+  <div class="field">
+    <%= f.label :defence %><br>
+    <%= f.number_field :defence %>
+  </div>
+  <div class="field">
+    <%= f.label :skill %><br>
+    <%= f.text_field :skill %>
+  </div>
+  <div class="field">
+    <%= f.label :wazatama %><br>
+    <%= f.text_field :wazatama %>
+  </div>
+  <div class="field">
+    <%= f.label :series %><br>
+    <%= f.text_field :series %>
+  </div>
+  <div class="field">
+    <%= f.label :arm_type %><br>
+    <%= f.text_field :arm_type %>
+  </div>
+  <div class="field">
+    <%= f.label :max_level %><br>
+    <%= f.number_field :max_level %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

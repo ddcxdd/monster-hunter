@@ -87,15 +87,15 @@
         <tr class="bougu-menu">
           <td>
             <ul>
-              <li><%= link_to "火", root_path %></li>
-              <li><%= link_to "☆1", root_path %></li>
-              <li><%= link_to "水", root_path %></li>
-              <li><%= link_to "☆2", root_path %></li>
-              <li><%= link_to "雷", root_path %></li>
-              <li><%= link_to "☆3", root_path %></li>
-              <li><%= link_to "氷", root_path %></li>
-              <li><%= link_to "☆4", root_path %></li>
-              <li><%= link_to "土", root_path %></li>
+              <li><%= link_to "頭", "/bougu/head" %></li>
+              <li><%= link_to "☆1", "/bougu/☆1" %></li>
+              <li><%= link_to "胴", "/bougu/body" %></li>
+              <li><%= link_to "☆2", "/bougu/☆2" %></li>
+              <li><%= link_to "腕", "/bougu/hand" %></li>
+              <li><%= link_to "☆3", "/bougu/☆3" %></li>
+              <li><%= link_to "腰", "/bougu/waist" %></li>
+              <li><%= link_to "☆4", "/bougu/☆4" %></li>
+              <li><%= link_to "脚", "/bougu/leg" %></li>
             </ul>
           </td>
         </tr>
@@ -112,9 +112,9 @@
     <div class="main">
       <h1 class="article-title">EXPLORE攻略記事</h1>
       <%= yield %>
-
+      <div class="popular-article">
       <h1 class="kiji-title">関連記事＆人気記事</h1>
-      <ul class="popular-article">
+      <ul>
         <% @notes.each do |note| %>
             <% if [1, 2, 3, 4, 5, 6].include? note.id %>
                 <li><%= link_to image_tag("logo.jpg"), note_path(note.id) %>
@@ -124,7 +124,7 @@
             <% end %>
         <% end %>
       </ul>
-
+      </div>
 
     </div>
 

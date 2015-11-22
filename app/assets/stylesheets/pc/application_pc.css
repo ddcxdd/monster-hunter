@@ -5,6 +5,8 @@ body {
     width: 960px;
     margin-left: auto;
     margin-right: auto;
+
+    /* ストライプ作り方 http://mae.chab.in/archives/2269 */
     background-image: linear-gradient(45deg,
     #fff 25%, #cccccc 25%,
     #cccccc 50%, #fff 50%,
@@ -154,6 +156,10 @@ table a {
     font-size: 20px;
 }
 
+.popular-article{
+    margin-top:100px;
+
+}
 .popular-article ul{
     padding:3px;
 }

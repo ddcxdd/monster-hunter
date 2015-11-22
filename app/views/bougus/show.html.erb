@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bougu.name %>
+</p>
+
+<p>
+  <strong>Position:</strong>
+  <%= @bougu.position %>
+</p>
+
+<p>
+  <strong>Rare:</strong>
+  <%= @bougu.rare %>
+</p>
+
+<p>
+  <strong>Defence:</strong>
+  <%= @bougu.defence %>
+</p>
+
+<p>
+  <strong>Skill:</strong>
+  <%= @bougu.skill %>
+</p>
+
+<p>
+  <strong>Wazatama:</strong>
+  <%= @bougu.wazatama %>
+</p>
+
+<p>
+  <strong>Series:</strong>
+  <%= @bougu.series %>
+</p>
+
+<p>
+  <strong>Arm type:</strong>
+  <%= @bougu.arm_type %>
+</p>
+
+<p>
+  <strong>Max level:</strong>
+  <%= @bougu.max_level %>
+</p>
+
+<%= link_to 'Edit', edit_bougu_path(@bougu) %> |
+<%= link_to 'Back', bougus_path %>

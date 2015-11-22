@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+  resources :bougus
+  resources :bougus
   get 'arms' => 'arms#index'
   get 'home/top'
   root 'home#top'
   resources :notes
   resources :monsters
-
+  get 'bougu/:bougu_type' => 'bougus#index'
   get 'arms/:arm_type' => 'arms#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

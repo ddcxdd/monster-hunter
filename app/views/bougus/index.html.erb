@@ -1,0 +1,56 @@
+<p id="notice"><%= notice %></p>
+
+<h1 clas="kiji-title"><%= @bougu_type %></h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>名前</th>
+    <th>部位</th>
+    <th>レア度</th>
+    <th>防御力</th>
+    <th>スキル</th>
+    <th>技玉</th>
+    <th>シリーズ</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% case @bougu_type %>
+  <% when "☆" %>
+      <% @bougus.each do |bougu| %>
+          <% if bougu.rare==@bougu_type then %>
+              <tr>
+                <td><%= bougu.name %></td>
+                <td><%= bougu.position %></td>
+                <td><%= bougu.rare %></td>
+                <td><%= bougu.defence %></td>
+                <td><%= bougu.skill %></td>
+                <td><%= bougu.wazatama %></td>
+                <td><%= bougu.series %></td>
+              </tr>
+          <% end %>
+      <% end %>
+  <% when "head" %>
+      <% @bougus.each do |bougu| %>
+          <% if bougu.position==@bougu_type then %>
+              <tr>
+                <td><%= bougu.name %></td>
+                <td><%= bougu.position %></td>
+                <td><%= bougu.rare %></td>
+                <td><%= bougu.defence %></td>
+                <td><%= bougu.skill %></td>
+                <td><%= bougu.wazatama %></td>
+                <td><%= bougu.series %></td>
+              </tr>
+          <% end %>
+      <% end %>
+
+
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+
