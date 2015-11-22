@@ -1,0 +1,264 @@
+/*body */
+body {
+    margin: 0px;
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+li {
+    list-style: none;
+}
+
+table a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/*ヘッダー*/
+
+.header a {
+    color: white;
+    text-decoration: none
+
+}
+
+.header a:hover {
+    color: white;
+    background: #ff2264;
+}
+
+.header a:active {
+    color: white;
+    background-color: #ff2264;
+    border-bottom:0px;
+
+}
+
+.header a:visited {
+    color: white;
+    background-color: #ff2264;
+    color: white;
+}
+
+.header table th:active {
+    background-color: #ff2264;
+}
+
+.header table td:active {
+    background-color: #ff2264;
+}
+
+.header {
+    width: 100%;
+}
+
+.header img {
+
+    display: block;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+
+}
+
+.header-image {
+    height: 100%;
+
+}
+
+.header table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+
+}
+
+.header table th {
+
+    font-size: 20px;
+    margin: 0px;
+    width: 20%;
+    height: 50px;
+    background-color: #ff4275;
+    color: white;
+    border-bottom: #de1260 5px solid;
+    border-right: solid #ffffff 1px;
+    border-top: solid #ffffff 1px;
+    border-left: solid #ffffff 1px;
+    font-weight: normal;
+    /*セルの中央に配置*/
+    line-height: 50px;
+
+}
+
+/*メイン*/
+.main {
+    float:left;
+    width:55%;
+    padding:15px;
+}
+
+.main table {
+    border-collapse: collapse;
+    border: solid 1px;
+    width: 100%;
+}
+
+.main th {
+    border: solid 1px;
+}
+
+/*サイドバー左*/
+.arm-menu li {
+    margin-right: 0px;
+    margin-top: 0px;
+    font-size: 10px;
+    padding-left: 0px;
+    border-bottom: #eeeeee solid 1px;
+}
+
+.bougu-menu li {
+    margin-right: 0px;
+    margin-top: 0px;
+    font-size: 10px;
+    padding-left: 0px;
+    border-bottom: #eeeeee solid 1px;
+}
+
+.sidebar-left {
+    float:left;
+    width: 20%;
+    height:100%;
+
+}
+
+
+.sidebar-left table {
+    border-collapse: collapse;
+    background-color: white;
+    width: 100%;
+}
+
+
+.sidebar-left td {
+    width: 100%;
+    margin: 0;
+    padding-left: 10px;
+    padding-top:10px;
+    height: 20px;
+    border-bottom: solid 4px #eeeeee;
+
+    font-size: 15px;
+    /*セルの中央に配置*/
+
+}
+
+.sidebar-left h1 {
+    border-bottom: #de1260 5px solid;
+    padding-top: 15px;
+    font-size: 20px;
+    height:30px;
+    align-content: center;
+    text-align: center;
+    background-color: #ff4275;
+    color: white;
+
+}
+
+.sidebar-left a {
+    text-decoration: none;
+    color: #2E2F30;
+}
+
+.sidebar-left a:hover {
+    background: white;
+}
+
+.sidebar-left a:active {
+    background-color: #eeeeee;
+}
+
+
+/* サイドバー右*/
+
+.sidebar-right {
+    float:right;
+    width: 20%;
+
+}
+
+
+.sidebar-right table {
+    border-collapse: collapse;
+    background-color: white;
+    width: 100%;
+}
+
+.sidebar-right td {
+    width: 100%;
+    margin: 0;
+    padding-left: 10px;
+    height: 30px;
+    border-bottom: solid 4px #eeeeee;
+
+    font-size: 35px;
+    /*セルの中央に配置*/
+
+}
+
+.sidebar-right h1 {
+    border-bottom: #de1260 5px solid;
+    height: 30px;
+    padding-top: 15px;
+    font-size: 20px;
+    align-content: center;
+    text-align: center;
+    background-color: #ff4275;
+    color: white;
+}
+
+.sidebar-right a {
+    text-decoration: none;
+    color: #2E2F30;
+}
+
+.sidebar-right a:hover {
+    background: white;
+}
+
+.sidebar-right a:active {
+    background-color: #eeeeee;
+}
+
+.sidebar-right img{
+    width:100%;
+
+
+}
+
+
+
+
+.footer-bottom {
+    clear:left;
+    background-color: #ff4275;
+    height: 200px;
+    margin: auto;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+.footer-bottom li {
+    width: 20%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+
+

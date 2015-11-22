@@ -1,11 +1,14 @@
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html>
-<link rel="stylesheet" type="text/css" href="css/tablesorter.css" />
 
+
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+
+<html>
 <head>
   <title>MonsterHunter</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "pc/application_pc", media: "all" %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -13,10 +16,11 @@
 <div class="header" id="footer1">
   <div class="header-image"><%= image_tag('http://www.mh-xr.jp/img/thumb.jpg')  %></div>
   <table>
-    <th><%= link_to "メニュー",:anchor =>"footer-menu" %></th>
+    <th><%= link_to "メニュaaaaー",:anchor =>"footer-menu" %></th>
     <th><%= link_to "人気記事",:anchor =>"footer-ninki" %></th>
     <th><%= link_to "Q&A" ,root_path %></th>
     <th><%= link_to"検索",root_path %></th>
+    <th><%= link_to "攻略のコツ",root_path %></th>
   </table>
 
 </div>
@@ -24,19 +28,10 @@
 <body>
 
 
+<div class="sidebar">
 
+  <div class="sidebar-left">
 
-
-<div class = sidebar-left>
-
-</div>
-
-  <div class = "main">
-    <%= yield %>
-  </div>
-
-  <div class="footer">
-    
     <h1  id="footer-guide">初心者ガイド</h1>
     <table class = "footer2">
       <tr><td><%=link_to '序盤の進め方',"/notes/1" %></td></tr>
@@ -46,43 +41,31 @@
     </table>
 
 
-
-
-        <h1 id="footer-ninki">人気記事</h1>
-        <table>
-        <% @notes.each do |note| %>
-
-          <tr><td><%= link_to note.title, note_path(note.id) %></td></tr>
-
-         <% end%>
-        </table>
-
-
-          <h1 id="footer-menu">メニュー</h1>
+    <h1 id="footer-menu">メニュー</h1>
     <table>
       <tr><td><%= link_to '武器',arms_path %></td></tr>
       <tr class ="arm-menu"><td>
-      <ul>
-        <li><%= link_to"大剣","/arms/taiken"%></li>
-        <li><%= link_to"太刀","/arms/tachi"%></li>
-        <li><%= link_to"片手剣","/arms/katate"%></li>
-        <li><%= link_to"双剣","/arms/souken"%></li>
-        <li><%= link_to"ハンマー","/arms/hummer"%></li>
-        <li><%= link_to"狩猟笛","/arms/hue"%></li>
-        <li><%= link_to"ランス","/arms/lance"%></li>
-        <li><%= link_to"ガンランス","/arms/gunlance"%></li>
-        <li><%= link_to"スラッシュアックス","/arms/slush"%></li>
-        <li><%= link_to"ライトボウガン","/arms/light"%></li>
-        <li><%= link_to"ヘビィボウガン","/arms/heavy"%></li>
-        <li><%= link_to"弓","/arms/yumi"%></li>
-        <li><%= link_to"チャージアックス","/arms/charge"%></li>
-      </ul>
+        <ul>
+          <li><%= link_to"大剣","/arms/taiken"%></li>
+          <li><%= link_to"太刀","/arms/tachi"%></li>
+          <li><%= link_to"片手剣","/arms/katate"%></li>
+          <li><%= link_to"双剣","/arms/souken"%></li>
+          <li><%= link_to"ハンマー","/arms/hummer"%></li>
+          <li><%= link_to"狩猟笛","/arms/hue"%></li>
+          <li><%= link_to"ランス","/arms/lance"%></li>
+          <li><%= link_to"ガンランス","/arms/gunlance"%></li>
+          <li><%= link_to"スラッシュアックス","/arms/slush"%></li>
+          <li><%= link_to"ライトボウガン","/arms/light"%></li>
+          <li><%= link_to"ヘビィボウガン","/arms/heavy"%></li>
+          <li><%= link_to"弓","/arms/yumi"%></li>
+          <li><%= link_to"チャージアックス","/arms/charge"%></li>
+        </ul>
       </td></tr>
 
 
       <tr><td><%= link_to '防具',root_path %></td></tr>
       <tr class="bougu-menu"><td>
-      <ul>
+        <ul>
           <li><%= link_to"火",root_path%></li>
           <li><%= link_to"☆1",root_path %></li>
           <li><%= link_to"水",root_path%></li>
@@ -92,23 +75,47 @@
           <li><%= link_to"氷",root_path%></li>
           <li><%= link_to"☆4",root_path %></li>
           <li><%= link_to"土",root_path%></li>
-      </ul>
+        </ul>
       </td></tr>
       <tr><td><%= link_to 'モンスター', monsters_path %></td></tr>
       <tr><td><%= link_to 'スキル',root_path %></td></tr>
-
     </table>
-    <ul class ="footer-bottom">
-      <li>トップ</li>
-      <li>ヘルプ</li>
-      <li>利用規約</li>
-      <li>プライバシーポリシー</li>
-      <li>お問い合わせ</li>
-      <br>copyright (C)
-
-    </ul>
   </div>
 
-  <p1 class="kotei"> <%= link_to "ページトップ" ,:anchor =>"footer1" %></p1>
+
+
+<div class = "main">
+  <%= yield %>
+</div>
+
+
+
+
+<div class="sidebar-right">
+  <h1 id="footer-ninki">人気記事</h1>
+  <ol type="1">
+    <% @notes.each do |note| %>
+        <%= link_to image_tag("logo.jpg"), note_path(note.id) %>
+        <li><td><%= link_to note.title, note_path(note.id) %></td></li><br>
+
+    <% end%>
+  </ol>
+
+</div>
+
+</div>
+
+<div class = footer>
+  <ul class ="footer-bottom">
+    <li>トップ</li>
+    <li>ヘルプ</li>
+    <li>利用規約</li>
+    <li>プライバシーポリシー</li>
+    <li>お問い合わせ</li>
+    <br>copyright (C)
+
+  </ul>
+</div>
+
 </body>
 </html>
