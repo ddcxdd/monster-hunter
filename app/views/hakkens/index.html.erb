@@ -1,0 +1,72 @@
+<p id="notice"><%= notice %></p>
+<div class="hakken">
+  <h1 class="kiji-title">発見物一覧</h1><br>
+
+
+
+  <% islands=["トリプー島", "マラクジャ島",
+              "ランバイ島", "フェイジョア島",
+              "クプアス島", "カニステル島", "ピタンガ島"] %>
+  <table>
+    <% islands.each do |island| %>
+        <td><%= link_to island, :anchor => island %></td>
+    <% end %>
+  </table>
+  <br>
+
+
+
+  <% islands.each do |island| %>
+      <h1 class="kiji-title" id=<%= island %>><%= island %></h1>
+
+      <table>
+        <thead>
+        <tr>
+          <th>クエストNo.</th>
+          <th>クエスト名</th>
+          <th>時間帯</th>
+          <th>発見物</th>
+          <th>可能性</th>
+          <th>輝石</th>
+          <th>輝石数</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <% @hakkens.each do |hakken| %>
+            <% if hakken.island == island %>
+                <tr>
+                  <% if hakken.quest_number2 != "" %>
+                    <tr>
+                      <td><%= hakken.quest_number %></td>
+                      <td rowspan="2"><%= hakken.quest_name %></td>
+                      <td><%= hakken.day_night %></td>
+                      <td rowspan="2"><%= hakken.name %></td>
+                      <td rowspan="2"><%= hakken.possibility %></td>
+                      <td rowspan="2"><%= hakken.kiseki_name %></td>
+                      <td rowspan="2"><%= hakken.kiseki_number %></td>
+                    </tr>
+                    <td><%= hakken.quest_number2 %></td>
+                    <td>夜</td>
+                <% else %>
+                    <tr>
+                      <td><%= hakken.quest_number %></td>
+                      <td><%= hakken.quest_name %></td>
+                      <td><%= hakken.day_night %></td>
+                      <td><%= hakken.name %></td>
+                      <td><%= hakken.possibility %></td>
+                      <td><%= hakken.kiseki_name %></td>
+                      <td><%= hakken.kiseki_number %></td>
+                    </tr>
+                <% end %>
+                </tr>
+            <% end %>
+        <% end %>
+        </tbody>
+      </table>
+
+      <br>
+  <% end %>
+
+
+</div>

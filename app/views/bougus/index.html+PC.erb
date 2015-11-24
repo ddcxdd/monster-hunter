@@ -3,21 +3,25 @@
 
 <h1 clas="kiji-title"><%= @bougu_type %></h1>
 
-<table>
-  <thead>
-  <tr>
-    <th>名前</th>
-    <th>部位</th>
-    <th>レア度</th>
-    <th>防御力</th>
-    <th>スキル</th>
-    <th>技玉</th>
-    <th>シリーズ</th>
-  </tr>
-  </thead>
-  <tbody>
+
+
+  <!--レア度別 -->
+  <% if ["☆1", "☆2", "☆3", "☆4"].include? @bougu_addres %>
+    <table>
+      <thead>
+      <tr>
+        <th>名前</th>
+        <th>部位</th>
+        <th>レア度</th>
+        <th>防御力</th>
+        <th>スキル</th>
+        <th>技玉</th>
+        <th>シリーズ</th>
+      </tr>
+      </thead>
+      <tbody>
       <% @bougus.each do |bougu| %>
-          <% if bougu.rare==@bougu_type then %>
+          <% if bougu.rare==@bougu_addres then %>
               <tr>
                 <td><%= bougu.name %></td>
                 <td><%= bougu.position %></td>
@@ -29,8 +33,25 @@
               </tr>
           <% end %>
       <% end %>
+  <% end %>
+
+  <!-- 部位別 -->
+  <% if ["head", "body", "hand", "waist", "leg"].include? @bougu_addres %>
+    <table>
+      <thead>
+      <tr>
+        <th>名前</th>
+        <th>部位</th>
+        <th>レア度</th>
+        <th>防御力</th>
+        <th>スキル</th>
+        <th>技玉</th>
+        <th>シリーズ</th>
+      </tr>
+      </thead>
+      <tbody>
       <% @bougus.each do |bougu| %>
-          <% if bougu.position==@bougu_type then %>
+          <% if bougu.position==@bougu_addres then %>
               <tr>
                 <td><%= bougu.name %></td>
                 <td><%= bougu.position %></td>
@@ -42,6 +63,53 @@
               </tr>
           <% end %>
       <% end %>
+  <% end %>
+
+
+  <!-- 剣士,ガンナー   シリーズ別 -->
+  <% @serieses = [""] %>
+  <% if ["kenshi", "gunnner"].include? @bougu_addres %>
+    <table>
+      <thead>
+      <tr>
+        <th>シリーズ名</th>
+        <th>名前</th>
+        <th>部位</th>
+        <th>レア度</th>
+        <th>防御</th>
+        <th>スキル</th>
+        <th>技玉</th>
+      </tr>
+      </thead>
+      <tbody>
+      <% @bougus.each do |bougu| %>
+          <% if bougu.arm_type == @bougu_addres %>
+              <!--すでに表示したシリーズのものは無視-->
+              <% if not @serieses.include? bougu.series %>
+                  <tr>
+                    <td rowspan=5><%= bougu.series %></td>
+                    <% @bougus.each do |bougu2| %>
+                        <% if bougu2.arm_type== @bougu_addres %>
+                          <% if bougu2.series == bougu.series %>
+                              <% if bougu2.position != "head" %>
+                                <tr>
+                            <% end %>
+                            <td><%= bougu2.name %></td>
+                            <td><%= bougu2.position %></td>
+                            <td><%= bougu2.rare %></td>
+                            <td><%= bougu2.defence %></td>
+                            <td><%= bougu2.skill %></td>
+                            <td><%= bougu2.wazatama %></td>
+                            </tr>
+                        <% end %>
+                    <% end %>
+              <% end %>
+          <% end %>
+          <% @serieses.push bougu.series %>
+      <% end %>
+  <% end %>
+  <% end %>
+
 
   </tbody>
 </table>
