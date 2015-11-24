@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :hakkens
+  resources :hakkens
+  resources :hakkens
   resources :bougus
   resources :bougus
   get 'arms' => 'arms#index'
@@ -8,6 +11,7 @@ Rails.application.routes.draw do
   resources :monsters
   get 'bougu/:bougu_type' => 'bougus#index'
   get 'arms/:arm_type' => 'arms#index'
+  get 'hakken' => 'hakken#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -108,6 +108,7 @@ table a {
 /*メイン*/
 .main {
     margin: 0 auto;
+    margin-bottom:150px;
 }
 
 .main table {
@@ -118,6 +119,16 @@ table a {
 
 .main th {
     border: solid 1px;
+}
+
+.main img{
+    width:100%;
+    margin-top:10px;
+
+}
+
+.main iframe {
+height:500px;
 }
 
 /*フッター*/

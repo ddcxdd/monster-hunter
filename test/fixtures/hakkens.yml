@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  quest_number: MyString
+  quest_name: MyString
+  day_night: MyString
+  name: MyString
+  possibility: MyString
+  kiseki_name: MyString
+  kiseki_number: 1
+  island: MyString
+
+two:
+  quest_number: MyString
+  quest_name: MyString
+  day_night: MyString
+  name: MyString
+  possibility: MyString
+  kiseki_name: MyString
+  kiseki_number: 1
+  island: MyString
