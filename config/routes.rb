@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   root 'home#top'
   resources :notes
   resources :monsters
-  get 'bougu/:bougu_type' => 'bougus#index'
+  get 'bougu/:bougu_addres' => 'bougus#index'
   get 'arms/:arm_type' => 'arms#index'
   get 'hakken' => 'hakken#index'
 

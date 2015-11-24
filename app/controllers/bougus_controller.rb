@@ -5,8 +5,7 @@ class BougusController < ApplicationController
   # GET /bougus.json
   def index
     @bougus = Bougu.all
-    @bougu_type = params[:bougu_type]
-    @series = []
+    @bougu_addres = params[:bougu_addres]
   end
 
   # GET /bougus/1
