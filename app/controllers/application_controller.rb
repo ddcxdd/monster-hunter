@@ -11,6 +11,7 @@ class ApplicationController < ActionController::Base
 
   private
   def detect_devise_variant # (1)と同じ名前
+    #IPHONEはデバイス名にMobileが含まれるので以下でアンドロイドとiphone以外をPCにしてる
     devise = request.user_agent
     if devise.include?("Mobile")
     else

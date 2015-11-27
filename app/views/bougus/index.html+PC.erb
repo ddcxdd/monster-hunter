@@ -1,5 +1,6 @@
-<%= stylesheet_link_tag "pc/arms_pc", media: "all" %>
+<div class ="bougu" >
 <p id="notice"><%= notice %></p>
+  <%= stylesheet_link_tag "pc/bougus_pc", media: "all" %>
 
 <h1 clas="kiji-title"><%= @bougu_type %></h1>
 
@@ -36,7 +37,7 @@
   <% end %>
 
   <!-- 部位別 -->
-  <% if ["head", "body", "hand", "waist", "leg"].include? @bougu_addres %>
+  <% if ["頭", "胴", "腕", "腰", "脚"].include? @bougu_addres %>
     <table>
       <thead>
       <tr>
@@ -67,8 +68,8 @@
 
 
   <!-- 剣士,ガンナー   シリーズ別 -->
-  <% @serieses = [""] %>
-  <% if ["kenshi", "gunnner"].include? @bougu_addres %>
+  <% @serieses = ["","ガーグァシリーズ","訓練兵団シリーズ","調査兵団シリーズ","剣士ネッキーシリーズ","立体機動装置シリーズ","立体機動装置シリーズ改"] %>
+  <% if ["kenshi","gunner"].include? @bougu_addres %>
     <table>
       <thead>
       <tr>
@@ -91,7 +92,7 @@
                     <% @bougus.each do |bougu2| %>
                         <% if bougu2.arm_type== @bougu_addres %>
                           <% if bougu2.series == bougu.series %>
-                              <% if bougu2.position != "head" %>
+                              <% if bougu2.position != "頭" %>
                                 <tr>
                             <% end %>
                             <td><%= bougu2.name %></td>
@@ -118,3 +119,4 @@
 
 
 
+</div>

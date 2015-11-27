@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 20151124081652) do
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
     t.string   "quest_number2", limit: 20
+    t.string   "hakken_number", limit: 20
   end
 
   create_table "monsters", force: :cascade do |t|
