@@ -31,10 +31,21 @@ table a {
 
 /*ヘッダー*/
 
+.header {
+    width: 100%;
+}
+
 .header a {
     color: white;
     text-decoration: none
 
+}
+
+
+.header a:visited {
+    color: white;
+    background-color: #ff2264;
+    color: white;
 }
 
 .header a:hover {
@@ -47,23 +58,8 @@ table a {
     background-color: #ff2264;
 }
 
-.header a:visited {
-    color: white;
-    background-color: #ff2264;
-    color: white;
-}
 
-.header table th:active {
-    background-color: #ff2264;
-}
 
-.header table td:active {
-    background-color: #ff2264;
-}
-
-.header {
-    width: 100%;
-}
 
 .header img {
 
@@ -105,6 +101,14 @@ table a {
 
 }
 
+.header table th:active {
+    background-color: #ff2264;
+}
+
+.header table td:active {
+    background-color: #ff2264;
+}
+
 /*メイン*/
 .main {
     margin: 0 auto;
@@ -132,61 +136,6 @@ height:500px;
 }
 
 /*フッター*/
-.arm-menu li {
-    width: 40%;
-    float: left;
-    margin-right: 20px;
-    margin-top: 20px;
-    font-size: 20px;
-    padding-left: 10px;
-    border-bottom: #eeeeee solid 1px;
-}
-
-.bougu-menu li {
-    width: 40%;
-    float: left;
-    margin-right: 20px;
-    margin-top: 20px;
-    font-size: 20px;
-    padding-left: 10px;
-    border-bottom: #eeeeee solid 1px;
-}
-
-.footer {
-    width: 100%;
-    clear: left;
-
-}
-
-}
-.footer table {
-    border-collapse: collapse;
-    background-color: white;
-    width: 100%;
-}
-
-.footer td {
-    width: 2000px;
-    margin: 0;
-    padding-left: 10px;
-    height: 100px;
-    border-bottom: solid 4px #eeeeee;
-
-    font-size: 35px;
-    /*セルの中央に配置*/
-    line-height: 100px;
-}
-
-.footer h1 {
-    border-bottom: #de1260 9px solid;
-    height: 60px;
-    padding-top: 40px;
-    font-size: 35px;
-    align-content: center;
-    text-align: center;
-    background-color: #ff4275;
-    color: white;
-}
 
 .footer a {
     text-decoration: none;
@@ -201,16 +150,81 @@ height:500px;
     background-color: #eeeeee;
 }
 
+.footer {
+    width: 100%;
+    clear: left;
+
+}
+
+
+
+.footer h1 {
+    color:white;
+    border-bottom: #de1260 9px solid;
+    height: 50px;
+    padding-top: 40px;
+    font-size: 35px;
+    align-content: center;
+    text-align: center;
+    background-color: #ff4275;
+    
+}
+
+
+
+.footer table {
+    border-collapse: collapse;
+    background-color: white;
+    width: 100%;
+}
+
+.footer td {
+    width: 2000px;
+    margin: 0;
+    padding-left: 10px;
+    height: 100px;
+    font-size: 35px;
+    /*セルの中央に配置*/
+    line-height: 30px;
+}
+
+
+.footer-menu-title{  
+ background-color:#f3f3f3;
+ width:100%;
+}
+
+.footer-menu td{
+    padding-bottom:50px;
+}
+
+.footer-menu li {
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 28px;
+    padding-left: 10px;
+   
+}
+
+
+
+.footer-menu li a{
+    color:#0084cd;
+}
+
+
 .footer-bottom {
     background-color: #ff4275;
     height: 200px;
     margin: auto;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-top: 50px;
     color: white;
     text-align: center;
+    font-size:16px;
 }
+
 
 .footer-bottom li {
     width: 20%;

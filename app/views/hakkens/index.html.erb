@@ -42,7 +42,6 @@
             <% end %>
 
                   <% if hakken.quest_number2 != "" %>
-                    <tr>
                       <td><%= image_tag(hakken.name)%></td>
                       <td><%= hakken.hakken_number %></td>
                       <td><%= hakken.quest_number%>,<%= hakken.quest_number2 %></td>
@@ -54,7 +53,6 @@
                       <td><%= hakken.kiseki_number %></td>
                     </tr>
                 <% else %>
-                    <tr>
                       <td><%= image_tag(hakken.name) %></td>
                               <td><%= hakken.hakken_number %></td>
                       <td><%= hakken.quest_number %></td>
