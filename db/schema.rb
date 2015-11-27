@@ -63,17 +63,22 @@ ActiveRecord::Schema.define(version: 20151124081652) do
 
   create_table "monsters", force: :cascade do |t|
     t.string   "name",       limit: 255
+    t.integer  "fire",       limit: 4
+    t.integer  "water",      limit: 4
+    t.integer  "thunder",    limit: 4
+    t.integer  "ice",        limit: 4
+    t.integer  "soil",       limit: 4
     t.string   "comment",    limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
-    t.string   "weak",       limit: 20
-    t.string   "destroy",    limit: 20
   end
 
   create_table "notes", force: :cascade do |t|
-    t.string "name",  limit: 255
-    t.string "title", limit: 255
-    t.string "body",  limit: 255
+    t.string   "name",       limit: 255
+    t.string   "title",      limit: 255
+    t.string   "body",       limit: 255
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
   end
 
 end
