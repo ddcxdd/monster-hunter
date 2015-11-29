@@ -187,12 +187,9 @@ table a {
     width: 100%;
 }
 
-<<<<<<< HEAD
-=======
 .footer-menu td {
     padding-bottom: 50px;
 }
->>>>>>> 23f8be5e1933283d13175f1ad86291fcd99e0354
 
 .footer-menu li {
     margin-right: 20px;
@@ -202,22 +199,14 @@ table a {
 
 }
 
-<<<<<<< HEAD
 .footer-hakken{
   margin-top:50px;
   margin-bottom:0;
   background-color:#f4f4f4;
   font-size:30px;
   padding:10px;
-
-
-
-
-=======
-.footer-menu li a {
-    color: #0084cd;
->>>>>>> 23f8be5e1933283d13175f1ad86291fcd99e0354
 }
+
 
 .footer-bottom {
     background-color: #ff4275;

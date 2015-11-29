@@ -1,13 +1,7 @@
-<h2>タイトル</h2>
-<p><%= @note.title %></p>
-
-
-
-<h2>内容</h2>
 
 <!--データベースの内容を "_kiji.html.erb"に書き込んで、それを読み込んでいる -->
 <!--これによってデータベースのなかでrubyを使える-->
-<% File.write("app/views/notes/_kiji.html.erb",@note.body_1) %>
+<% File.write("app/views/notes/_kiji.html.erb",@note.body) %>
 <%= render "notes/kiji" %>
 
 
