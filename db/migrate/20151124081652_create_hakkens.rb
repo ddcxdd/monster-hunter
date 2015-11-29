@@ -9,6 +9,9 @@ class CreateHakkens < ActiveRecord::Migration
       t.string :kiseki_name
       t.integer :kiseki_number
       t.string :island
+      t.string :hakken_number
+      t.string :quest_number2
+
 
       t.timestamps null: false
     end

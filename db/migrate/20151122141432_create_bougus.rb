@@ -12,6 +12,7 @@ class CreateBougus < ActiveRecord::Migration
       t.integer :max_level
 
       t.timestamps null: false
+
     end
   end
 end

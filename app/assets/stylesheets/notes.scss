@@ -9,10 +9,22 @@
 }
 
 .kiji-title {
+	font-weight:normal;
+	border-bottom: solid #000 2px;
+	padding-bottom:30px;
 
-  font-size: 20px;
+}
+.kiji-subtitle {
+	margin-bottom:150px;
+	font-size:12px;
+}
+
+.kiji-subhead {
+
+  font-size: 35px;
   margin: 0px;
   padding: 5px;
   border-bottom: solid #ffffa4 5px;
+  width:500px;
 
 }

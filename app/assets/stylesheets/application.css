@@ -213,7 +213,7 @@ table a {
     margin-top:10px;
     margin-bottom:10px;
     border-bottom:solid 3px #EEEEEE;
-}
+
 
 .footer-ninki table{
     width:auto;
@@ -278,6 +278,14 @@ table a {
 .footer-menu td a {
     color: #0084cd;
 }
+.footer-hakken{
+  margin-top:50px;
+  margin-bottom:0;
+  background-color:#f4f4f4;
+  font-size:30px;
+  padding:10px;
+}
+
 
 .footer-bottom {
     background-color: #ff4275;
@@ -314,5 +322,12 @@ table a {
     display: block;
     height: 100%;
     width: 100%;
+}
+
+
+
+/*パス表示*/
+.pass{
+    margin :20px;
 }
 
