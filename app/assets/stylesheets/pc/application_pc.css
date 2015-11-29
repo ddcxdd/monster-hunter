@@ -25,17 +25,18 @@ table a {
     height: 100%;
 }
 
-.midashi{
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
-    background-color:#CCCCCC;
-    height:30px;
-    padding-top:10px;
-    padding-left:5px;
-    font-size:15px;
+.midashi {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #CCCCCC;
+    height: 30px;
+    padding-top: 10px;
+    padding-left: 5px;
+    font-size: 15px;
 
 }
+
 /*ヘッダー*/
 
 .header a {
@@ -78,13 +79,15 @@ table a {
 
     display: block;
     width: 100%;
-    height: 300px;
+    height:300px;
     background-color: white;
+
 
 }
 
 .header-image {
-    height: 100%;
+height:200px;
+    overflow: hidden;
 
 }
 
@@ -123,7 +126,20 @@ table a {
     border-right: 1px white solid;
     border-left: 1px white solid;
 }
+.header-popular img{
+    height:auto;
+}
 
+.header-popular table td{
+    width:25%;
+    text-align:center;
+    float:left;
+}
+
+.header-popular-image{
+    height:50px;
+    overflow:hidden;
+}
 /*メイン*/
 .main {
     float: left;
@@ -131,7 +147,7 @@ table a {
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 10px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     background-color: white;
 
 }
@@ -142,19 +158,19 @@ table a {
     width: 100%;
 }
 
-
 .main th {
     border: solid 1px;
 }
 
-.main img{
-    width:100%;
-    margin-top:10px;
+.main img {
+    width: 100%;
+    margin-top: 10px;
 }
 
-.new-event{
-    padding-left:0px;
+.new-event {
+    padding-left: 0px;
 }
+
 .article-title {
     width: 100%;
     height: 25px;
@@ -167,25 +183,26 @@ table a {
     font-size: 20px;
 }
 
-.popular-article{
-    margin-top:100px;
+.popular-article {
+    margin-top: 100px;
 
 }
-.popular-article ul{
-    padding:3px;
+
+.popular-article ul {
+    padding: 3px;
 }
 
-
-.popular-article img{
-    width:100%;
+.popular-article img {
+    width: 100%;
 }
 
-.popular-article li{
-    padding:0;
-    float:left;
-    width:28%;
-    margin-right:5%;
+.popular-article li {
+    padding: 0;
+    float: left;
+    width: 28%;
+    margin-right: 5%;
 }
+
 /*サイドバー左*/
 .arm-menu li {
     margin-right: 0px;
@@ -270,6 +287,12 @@ table a {
     margin-top: 10px;
 }
 
+.sidebar-right li{
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+}
+
 .sidebar-right table {
     border-collapse: collapse;
     background-color: white;
@@ -319,17 +342,17 @@ table a {
 }
 
 .sidebar-right img {
-    width: 100%;
+    width:100%;
+
     margin: 0px;
     padding: 0px;
 
 }
 
-.sidebar-right ul{
-    margin:0px;
-    padding:5px;
+.sidebar-right ul {
+    margin: 0px;
+    padding: 5px;
 }
-
 
 .footer-bottom {
     clear: left;
