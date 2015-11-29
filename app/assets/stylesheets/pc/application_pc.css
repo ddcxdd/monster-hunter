@@ -287,10 +287,14 @@ height:200px;
     margin-top: 10px;
     height:100%;
 }
+.sidebar-right figcaption{
+    margin-bottom:30px;
+    border-bottom:solid 1px black;
+}
 
 .sidebar-right li{
     width: 160px;
-    height: 160px;
+    height: 120px;
     overflow: hidden;
 }
 
@@ -310,7 +314,6 @@ height:200px;
     padding-left: 0px;
     height: 30px;
     border-bottom: solid 4px #eeeeee;
-    padding-left: 0px;
     font-size: 35px;
     /*セルの中央に配置*/
     background-color: yellow;

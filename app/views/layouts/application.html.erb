@@ -94,7 +94,7 @@
 
       <% @note = Note.find(1) %>
       <tr>
-        <th></th><%= image_tag("rank1") %></th>
+        <td><%= image_tag("rank1") %></td>
         <td><%= link_to @note.title, note_path(@note.id) %></td>
       </tr>
       <% @note = Note.find(2) %>
@@ -126,73 +126,8 @@
   <h1 id="footer-menu">メニュー</h1>
 
   <p class="footer-hakken">武器</p>
-  <table>
-
-    <tr class="footer-menu">
-      <td>
-        <ul>
-
-          <li><%= link_to "・太刀", "/arms/tachi" %></li>
-          <li><%= link_to "・片手剣", "/arms/katate" %></li>
-          <li><%= link_to "・双剣", "/arms/souken" %></li>
-          <li><%= link_to "・ハンマー", "/arms/hummer" %></li>
-          <li><%= link_to "・狩猟笛", "/arms/hue" %></li>
-          <li><%= link_to "・ランス", "/arms/lance" %></li>
-        </ul>
-
-      </td>
-
-      <td>
-        <ul>
-          <li><%= link_to "・ガンランス", "/arms/gunlance" %></li>
-          <li><%= link_to "・スラッシュアックス", "/arms/slush" %></li>
-          <li><%= link_to "・ライトボウガン", "/arms/light" %></li>
-          <li><%= link_to "・ヘビィボウガン", "/arms/heavy" %></li>
-          <li><%= link_to "・弓", "/arms/yumi" %></li>
-          <li><%= link_to "・チャージアックス", "/arms/charge" %></li>
-          <li><%= link_to "・大剣", "/arms/taiken" %></li>
-        </ul>
-      </td>
-
-    </tr>
-  </table>
-  <table>
-   
-   <p class="footer-hakken">防具</p>
-    <tr class="footer-menu">
-      <td>
-        <ul>
-          <li><%= link_to "・火", root_path %></li>
-          <li><%= link_to "・水", root_path %></li>
-          <li><%= link_to "・雷", root_path %></li>
-          <li><%= link_to "・氷", root_path %></li>
-          <li><%= link_to "・土", root_path %></li>
-        </ul>
-      </td>
-
-      <td>
-        <ul>
-          <li><%= link_to "剣士", "/bougu/kenshi" %></li>
-          <li><%= link_to "ガンナー", "/bougu/gunner" %></li>
-          <li><%= link_to "頭", "/bougu/head" %></li>
-          <li><%= link_to "☆1", "/bougu/☆1" %></li>
-          <li><%= link_to "胴", "/bougu/body" %></li>
-          <li><%= link_to "☆2", "/bougu/☆2" %></li>
-          <li><%= link_to "腕", "/bougu/hand" %></li>
-          <li><%= link_to "☆3", "/bougu/☆3" %></li>
-          <li><%= link_to "腰", "/bougu/waist" %></li>
-          <li><%= link_to "☆4", "/bougu/☆4" %></li>
-          <li><%= link_to "脚", "/bougu/leg" %></li>
 
 
-          <li><%= link_to "・☆1", root_path %></li>
-          <li><%= link_to "・☆2", root_path %></li>
-          <li><%= link_to "・☆3", root_path %></li>
-          <li><%= link_to "・☆4", root_path %></li>
-
-        </ul>
-      </td>
-    </tr>
     
 
   <div class="footer-buki">
@@ -232,37 +167,34 @@
   <p class="footer-hakken">防具</p>
 
   <div class="footer-bougu">
-    <table>
 
-      <tr>
-        <th>シリーズ</th>
-      </tr>
-      <tr class="footer-bougu2">
-        <td><%= link_to "剣士", "/bougu/kenshi" %></td>
-        <td><%= link_to "ガンナー", "/bougu/gunner" %></td>
-      </tr>
-      <tr>
-        <th>属性</th>
-      </tr>
-      <tr class="foote-bougu2">
-        <td><%= link_to "・火", root_path %></td>
-        <td><%= link_to "・水", root_path %></td>
-        <td><%= link_to "・雷", root_path %></td>
-        <td><%= link_to "・氷", root_path %></td>
-        <td><%= link_to "・土", root_path %></td>
-      </tr>
-      <tr>
-        <th>レア度</th>
-      </tr>
-      <tr class="footer-bougu2">
+
+        <h5>シリーズ</h5>
+
+      <table id="footer-bougu2">
+        <td><%= link_to " 剣士", "/bougu/kenshi" %></td>
+        <td><%= link_to " ガンナー", "/bougu/gunner" %></td>
+      </table>
+
+        <h5>属性</h5>
+
+      <table id="footer-bougu2">
+        <td><%= link_to "・火", "/bougu/火" %></td>
+        <td><%= link_to "・水", "/bougu/水" %></td>
+        <td><%= link_to "・雷", "/bougu/雷" %></td>
+        <td><%= link_to "・氷", "/bougu/氷" %></td>
+        <td><%= link_to "・土", "/bougu/土" %></td>
+     </table>
+        <h5>レア度</h5>
+
+      <table id="footer-bougu2">
         <td><%= link_to "☆1", "/bougu/☆1" %></td>
         <td><%= link_to "☆2", "/bougu/☆2" %></td>
         <td><%= link_to "☆3", "/bougu/☆3" %></td>
         <td><%= link_to "☆4", "/bougu/☆4" %></td>
-      </tr>
+  </table>
 
 
-    </table>
 
   </div>
   <ul class="footer-bottom">

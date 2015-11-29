@@ -1,6 +1,7 @@
+
 <p id="notice"><%= notice %></p>
 <%= stylesheet_link_tag "pc/arms_pc", media: "all" %>
-
+<div class="arms">
 <h1>武器一覧</h1>
 
 <table>
@@ -16,11 +17,15 @@
 
   </tr>
   </thead>
-
+  <% @line=0 %>
   <tbody>
   <% @arms.each do |arm| %>
       <% if arm.arm_type==@arm_type then %>
+        <% if @line % 2 == 1 %>
+          <tr class="even">
+  <%else%>
           <tr>
+            <% end %>
             <td><%= arm.name %></td>
             <td><%= arm.skill %></td>
             <td><%= arm.zokusei %></td>
@@ -28,9 +33,11 @@
             <td><%= arm.max_attack %></td>
           </tr>
       <% end %>
+    <% @line=@line+1 %>
   <% end %>
   </tbody>
 </table>
 
 <br>
+  </div>
 

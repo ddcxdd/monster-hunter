@@ -204,15 +204,22 @@ table a {
     color:#0084cd;
     padding-top:15px;
     font-size:33px;
+    width:2000px;
+
+}
+.footer-ninki td{
+    width:auto;
+
 }
 .footer-ninki th{
     width:30px;
 }
-.footer-ninki tr a{
-    height:60px;
-    margin-top:10px;
-    margin-bottom:10px;
-    border-bottom:solid 3px #EEEEEE;
+.footer-ninki tr a {
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: solid 3px #EEEEEE;
+}
 
 
 .footer-ninki table{
@@ -237,35 +244,46 @@ table a {
     padding-right: 15%;
 }
 
-.footer-bougu{
-}
+
 .footer-bougu table {
-    width: 80%;
+    width: auto;
+    margin-left:100px;
+    border-bottom:solid 3px #EEEEEE;
+    margin-bottom:10px;
+
 }
 
 .footer-bougu td {
     font-size: 28px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     text-align: center;
+    width:auto;
+}
+.footer-bougu h5{
+    width:auto;
+    margin-bottom:0;
+    margin-top:20px;
+    margin-left:30px;
 }
 
 .footer-bougu td a {
-    width: auto;
+    width: 120px;
     margin: 0px;
+    color: #0084cd;
+    text-align:left;
+    padding-left:0;
 }
 
-.footer-bougu td a {
-    color: #0084cd;
-}
 
 .footer-bougu th {
     padding-bottom: 10px;
     font-size: 28px;
     width:auto;
+    text-align:left;
+    padding-left:30px;
 }
-.footer-bougu2 a{
-    padding-left:100px;
-}
+
+
 
 .footer-hakken {
     margin-top: 50px;

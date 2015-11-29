@@ -1,14 +1,13 @@
-// Place all the styles related to the arms controller here.
+// Place all the styles related to the bougus controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .bougu td {
   border-collapse: collapse;
-  border: solid 1px black;
   text-align: center;
-  font-size: 2px;
-  height: 10px;
-  padding: 2px;
+  font-size: 10px;
+  padding:20px 0 20px 0;
+  border:white solid 1px;
 }
 
 .bougu table {
@@ -17,16 +16,10 @@
   width: 90%;
 }
 
-.bougu th {
+.bougu table th {
   background-color: #eeeeee;
+  border:solid 1px white;
+  font-size:15px;
 
 }
-
-
-
-
-
-
-
-
 

@@ -2,24 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.main td {
+.arms td {
   border-collapse: collapse;
-  border: solid 1px black;
   text-align: center;
   font-size: 10px;
-  height: 40px;
-
-  padding: 20px;
+  height: auto;
+  border:solid 1px white;
+  padding:8px 0 8px 0;
 }
 
-.main table {
+.arms table {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
+  width: 90%;
 }
 
-.main th {
+.arms th {
+  border:solid 1px white;
   background-color: #eeeeee;
+  font-size:15px;
 }
 
 

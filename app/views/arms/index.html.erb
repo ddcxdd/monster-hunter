@@ -1,35 +1,42 @@
+
 <p id="notice"><%= notice %></p>
+<div class="arms">
+  <h1 class="kiji-title"><%= @arm_type%>一覧</h1>
 
-<h1>武器一覧</h1>
-
-<table>
-  <thead>
-  <tr>
+  <table>
+    <thead>
+    <tr>
 
 
-    <th>名前</th>
-    <th>スキル</th>
-    <th>属性</th>
-    <th>レア度</th>
-    <th>最終攻撃力</th>
+      <th>名前</th>
+      <th>スキル</th>
+      <th>属性</th>
+      <th>レア度</th>
+      <th>最終攻撃力</th>
 
-  </tr>
-  </thead>
-
-  <tbody>
-  <% @arms.each do |arm| %>
-      <% if arm.arm_type==@arm_type then %>
-          <tr>
+    </tr>
+    </thead>
+    <% @line=0 %>
+    <tbody>
+    <% @arms.each do |arm| %>
+        <% if arm.arm_type==@arm_type then %>
+            <% if @line % 2 == 1 %>
+                <tr class="even">
+            <%else%>
+                <tr>
+            <% end %>
             <td><%= arm.name %></td>
             <td><%= arm.skill %></td>
             <td><%= arm.zokusei %></td>
             <td><%= arm.rare %></td>
             <td><%= arm.max_attack %></td>
-          </tr>
-      <% end %>
-  <% end %>
-  </tbody>
-</table>
+            </tr>
+        <% end %>
+        <% @line=@line+1 %>
+    <% end %>
+    </tbody>
+  </table>
 
-<br>
+  <br>
+</div>
 
