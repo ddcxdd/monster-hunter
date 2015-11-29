@@ -16,8 +16,9 @@
 
   <div class="header" id="footer1">
     <div class="header-image"><%= image_tag('http://www.mh-xr.jp/img/thumb.jpg') %></div>
+
     <table>
-      <th><%= link_to "メニュー",  root_path %></th>
+      <th><%= link_to "メニュー", root_path %></th>
       <th><%= link_to "人気記事", :anchor => "footer-ninki" %></th>
       <th><%= link_to "Q&A", root_path %></th>
       <th><%= link_to "検索", root_path %></th>
@@ -58,7 +59,20 @@
       <h1 id="footer-menu">メニュー</h1>
       <table>
         <tr>
-          <td><%= link_to '発見物一覧', "/hakkens" %></td>
+          <td><%= link_to '発見物一覧', "/発見物一覧" %></td>
+        </tr>
+        <tr>
+          <td>
+            <ul>
+              <li><%= link_to "▶トリプー島", "/発見物/トリプー島" %></li>
+              <li><%= link_to "▶マラクジャ島", "/発見物/マラクジャ島" %></li>
+              <li><%= link_to "▶ランバイ島", "/発見物/ランバイ島" %></li>
+              <li><%= link_to "▶フェイジョア島", "/発見物/フェイジョア島" %></li>
+              <li><%= link_to "▶クプアス島", "/発見物/クプアス島" %></li>
+              <li><%= link_to "▶カニステル島", "/発見物/カニステル島" %></li>
+              <li><%= link_to "▶ピタンガ島", "/発見物/ピタンガ島" %></li>
+            </ul>
+          </td>
         </tr>
         <tr>
           <td><%= link_to '武器', arms_path %></td>
@@ -118,30 +132,35 @@
       <h1 class="article-title">EXPLORE攻略記事</h1>
       <%= yield %>
       <div class="popular-article">
-      <h1 class="kiji-title">関連記事＆人気記事</h1>
-      <ul>
-        <% @notes.each do |note| %>
-            <% if [1, 2, 3, 4, 5, 6].include? note.id %>
-                <li><%= link_to image_tag("logo.jpg"), note_path(note.id) %>
+        <h1 class="kiji-title">関連記事＆人気記事</h1>
+        <ul>
+          <% @notes.each do |note| %>
+              <% if [1, 2, 3, 4, 5, 6].include? note.id %>
+                  <li><%= link_to image_tag("logo.jpg"), note_path(note.id) %>
 
-                <%= link_to note.title, note_path(note.id) %></li>
+                    <%= link_to note.title, note_path(note.id) %></li>
 
-            <% end %>
-        <% end %>
-      </ul>
+              <% end %>
+          <% end %>
+        </ul>
       </div>
 
     </div>
 
 
     <div class="sidebar-right">
-      <h1 id="footer-ninki">人気記事</h1>
+      <h1 id="sidebar-ninki">人気記事</h1>
       <ul>
         <% @notes.each do |note| %>
-            <%= link_to image_tag("logo.jpg"), note_path(note.id) %>
-            <li>
-              <%= link_to note.title, note_path(note.id) %>
-            </li>
+            <% if File.exist? "app/assets/images/kiji/"+note.id.to_s+"-1.png" %>
+                <li><%= link_to image_tag("kiji/"+note.id.to_s+"-1"), note_path(note.id) %></li>
+            <% elsif File.exist? "app/assets/images/kiji/"+note.id.to_s+"-1.jpg" %>
+                <li><%= link_to image_tag("kiji/"+note.id.to_s+"-1"), note_path(note.id) %></li>
+            <% else %>
+                <li><%= link_to image_tag("logo"), note_path(note.id) %></li>
+                <figcaption><%= link_to note.title, note_path(note.id) %></figcaption>
+            <% end %>
+
             <br>
 
         <% end %>

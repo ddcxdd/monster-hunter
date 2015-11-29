@@ -15,13 +15,13 @@ class BougusController < ApplicationController
 
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_bougu
-      @bougu = Bougu.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_bougu
+    @bougu = Bougu.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def bougu_params
-      params.require(:bougu).permit(:name, :position, :rare, :defence, :skill, :wazatama, :series, :arm_type, :max_level)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def bougu_params
+    params.require(:bougu).permit(:name, :position, :rare, :defence, :skill, :wazatama, :series, :arm_type, :max_level)
+  end
 end

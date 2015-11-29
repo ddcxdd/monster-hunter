@@ -4,13 +4,16 @@
 
 
 <h2>内容</h2>
-<p><%= @note.body %></p>
+
+<!--データベースの内容を "_kiji.html.erb"に書き込んで、それを読み込んでいる -->
+<!--これによってデータベースのなかでrubyを使える-->
+<% File.write("app/views/notes/_kiji.html.erb",@note.body_1) %>
+<%= render "notes/kiji" %>
 
 
 
 <br>
 <div class="kiji">
-
   <title>初心者の効率の良い進め方</title>
   <br>
 

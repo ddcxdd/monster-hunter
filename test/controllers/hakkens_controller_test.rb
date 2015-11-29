@@ -18,7 +18,7 @@ class HakkensControllerTest < ActionController::TestCase
 
   test "should create hakken" do
     assert_difference('Hakken.count') do
-      post :create, hakken: { day_night: @hakken.day_night, island: @hakken.island, kiseki_name: @hakken.kiseki_name, kiseki_number: @hakken.kiseki_number, name: @hakken.name, possibility: @hakken.possibility, quest_name: @hakken.quest_name, quest_number: @hakken.quest_number }
+      post :create, hakken: {day_night: @hakken.day_night, island: @hakken.island, kiseki_name: @hakken.kiseki_name, kiseki_number: @hakken.kiseki_number, name: @hakken.name, possibility: @hakken.possibility, quest_name: @hakken.quest_name, quest_number: @hakken.quest_number}
     end
 
     assert_redirected_to hakken_path(assigns(:hakken))
@@ -35,7 +35,7 @@ class HakkensControllerTest < ActionController::TestCase
   end
 
   test "should update hakken" do
-    patch :update, id: @hakken, hakken: { day_night: @hakken.day_night, island: @hakken.island, kiseki_name: @hakken.kiseki_name, kiseki_number: @hakken.kiseki_number, name: @hakken.name, possibility: @hakken.possibility, quest_name: @hakken.quest_name, quest_number: @hakken.quest_number }
+    patch :update, id: @hakken, hakken: {day_night: @hakken.day_night, island: @hakken.island, kiseki_name: @hakken.kiseki_name, kiseki_number: @hakken.kiseki_number, name: @hakken.name, possibility: @hakken.possibility, quest_name: @hakken.quest_name, quest_number: @hakken.quest_number}
     assert_redirected_to hakken_path(assigns(:hakken))
   end
 

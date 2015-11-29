@@ -41,7 +41,6 @@ table a {
 
 }
 
-
 .header a:visited {
     color: white;
     background-color: #ff2264;
@@ -57,9 +56,6 @@ table a {
     color: white;
     background-color: #ff2264;
 }
-
-
-
 
 .header img {
 
@@ -112,7 +108,7 @@ table a {
 /*メイン*/
 .main {
     margin: 0 auto;
-    margin-bottom:150px;
+    margin-bottom: 150px;
 }
 
 .main table {
@@ -125,14 +121,14 @@ table a {
     border: solid 1px;
 }
 
-.main img{
-    width:100%;
-    margin-top:10px;
+.main img {
+    width: 100%;
+    margin-top: 10px;
 
 }
 
 .main iframe {
-height:500px;
+    height: 500px;
 }
 
 /*フッター*/
@@ -156,10 +152,8 @@ height:500px;
 
 }
 
-
-
 .footer h1 {
-    color:white;
+    color: white;
     border-bottom: #de1260 9px solid;
     height: 50px;
     padding-top: 40px;
@@ -167,10 +161,8 @@ height:500px;
     align-content: center;
     text-align: center;
     background-color: #ff4275;
-    
+
 }
-
-
 
 .footer table {
     border-collapse: collapse;
@@ -188,14 +180,13 @@ height:500px;
     line-height: 30px;
 }
 
-
-.footer-menu-title{  
- background-color:#f3f3f3;
- width:100%;
+.footer-menu-title {
+    background-color: #f3f3f3;
+    width: 100%;
 }
 
-.footer-menu td{
-    padding-bottom:50px;
+.footer-menu td {
+    padding-bottom: 50px;
 }
 
 .footer-menu li {
@@ -203,15 +194,12 @@ height:500px;
     margin-top: 20px;
     font-size: 28px;
     padding-left: 10px;
-   
+
 }
 
-
-
-.footer-menu li a{
-    color:#0084cd;
+.footer-menu li a {
+    color: #0084cd;
 }
-
 
 .footer-bottom {
     background-color: #ff4275;
@@ -222,9 +210,8 @@ height:500px;
     padding-top: 50px;
     color: white;
     text-align: center;
-    font-size:16px;
+    font-size: 16px;
 }
-
 
 .footer-bottom li {
     width: 20%;

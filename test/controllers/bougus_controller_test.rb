@@ -18,7 +18,7 @@ class BougusControllerTest < ActionController::TestCase
 
   test "should create bougu" do
     assert_difference('Bougu.count') do
-      post :create, bougu: { arm_type: @bougu.arm_type, defence: @bougu.defence, max_level: @bougu.max_level, name: @bougu.name, position: @bougu.position, rare: @bougu.rare, series: @bougu.series, skill: @bougu.skill, wazatama: @bougu.wazatama }
+      post :create, bougu: {arm_type: @bougu.arm_type, defence: @bougu.defence, max_level: @bougu.max_level, name: @bougu.name, position: @bougu.position, rare: @bougu.rare, series: @bougu.series, skill: @bougu.skill, wazatama: @bougu.wazatama}
     end
 
     assert_redirected_to bougu_path(assigns(:bougu))
@@ -35,7 +35,7 @@ class BougusControllerTest < ActionController::TestCase
   end
 
   test "should update bougu" do
-    patch :update, id: @bougu, bougu: { arm_type: @bougu.arm_type, defence: @bougu.defence, max_level: @bougu.max_level, name: @bougu.name, position: @bougu.position, rare: @bougu.rare, series: @bougu.series, skill: @bougu.skill, wazatama: @bougu.wazatama }
+    patch :update, id: @bougu, bougu: {arm_type: @bougu.arm_type, defence: @bougu.defence, max_level: @bougu.max_level, name: @bougu.name, position: @bougu.position, rare: @bougu.rare, series: @bougu.series, skill: @bougu.skill, wazatama: @bougu.wazatama}
     assert_redirected_to bougu_path(assigns(:bougu))
   end
 
