@@ -31,34 +31,52 @@
 
 <div class="footer">
 
-    <h1>発見物</h1>
- <tr class="footer-menu">
+
+
+
+
+
+
+
+
+<h1>発見物</h1>
+
+<p class="footer-hakken">マラクジャ群島</p>
+ <table>
+    <tr class="footer-menu">
       <td>
         <ul>
-          
-          <li><%= link_to "・太刀", "/arms/tachi" %></li>
-          <li><%= link_to "・片手剣", "/arms/katate" %></li>
-          <li><%= link_to "・双剣", "/arms/souken" %></li>
-          <li><%= link_to "・ハンマー", "/arms/hummer" %></li>
-          <li><%= link_to "・狩猟笛", "/arms/hue" %></li>
-          <li><%= link_to "・ランス", "/arms/lance" %></li>
+          <li><%= link_to "・マラクジャ島", "/arms/tachi" %></li>
+          <li><%= link_to "・ランバイ島", "/arms/katate" %></li>
+          <li><%= link_to "・フェイジョア島", "/arms/souken" %></li>
+          <li><%= link_to "・クプアス島", "/arms/hummer" %></li>
+          <li><%= link_to "・カニステル島", "/arms/hue" %></li>
+          <li><%= link_to "・ピタンガ島", "/arms/lance" %></li>
         </ul>
-
       </td>
-
+    　</tr>
+  </table>
+   <p class="footer-hakken">ヴォルヒール群島</p>
+  <table>
+      <tr class="footer-menu">
       <td>
         <ul>
-          <li><%= link_to "・ガンランス", "/arms/gunlance" %></li>
-          <li><%= link_to "・スラッシュアックス", "/arms/slush" %></li>
-          <li><%= link_to "・ライトボウガン", "/arms/light" %></li>
-          <li><%= link_to "・ヘビィボウガン", "/arms/heavy" %></li>
-          <li><%= link_to "・弓", "/arms/yumi" %></li>
-          <li><%= link_to "・チャージアックス", "/arms/charge" %></li>
-          <li><%= link_to "・大剣", "/arms/taiken" %></li>
+          <li><%= link_to "・トリプー島", "/arms/gunlance" %></li>
         </ul>
       </td>
 
     </tr>
+  </table>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -98,10 +116,9 @@
 
 
   <h1 id="footer-menu">メニュー</h1>
+  <p class="footer-hakken">武器</p>
+
   <table>
-    <tr>
-      <td colspan="2"><%= link_to '武器' ,arms_path, :class => 'footer-menu-title' %></td>
-    </tr>
 
     <tr class="footer-menu">
       <td>
@@ -130,10 +147,10 @@
       </td>
 
     </tr>
-
-    <tr>
-      <td colspan="2"><%= link_to '防具', root_path, :class => 'footer-menu-title' %></td>
-    </tr>
+  </table>
+  <table>
+   
+   <p class="footer-hakken">防具</p>
     <tr class="footer-menu">
       <td>
         <ul>
@@ -147,7 +164,6 @@
 
       <td>
         <ul>
-<<<<<<< HEAD
           <li><%= link_to "剣士", "/bougu/kenshi" %></li>
           <li><%= link_to "ガンナー", "/bougu/gunner" %></li>
           <li><%= link_to "頭", "/bougu/head" %></li>
@@ -159,21 +175,11 @@
           <li><%= link_to "腰", "/bougu/waist" %></li>
           <li><%= link_to "☆4", "/bougu/☆4" %></li>
           <li><%= link_to "脚", "/bougu/leg" %></li>
-=======
-          <li><%= link_to "・☆1", root_path %></li>
-          <li><%= link_to "・☆2", root_path %></li>
-          <li><%= link_to "・☆3", root_path %></li>
-          <li><%= link_to "・☆4", root_path %></li>
->>>>>>> fb7e25c96c056ff557e8cd62039c0d5a1b6374b7
+
         </ul>
       </td>
     </tr>
-    <tr>
-      <td><%= link_to 'モンスター', monsters_path %></td>
-    </tr>
-    <tr>
-      <td><%= link_to 'スキル', root_path %></td>
-    </tr>
+    
 
   </table>
   <ul class="footer-bottom">
