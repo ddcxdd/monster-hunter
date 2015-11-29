@@ -1,7 +1,13 @@
 
+<div class ="pass">
+<%= link_to 'エクスプロア最強究極完全攻略TOP', root_path %>　>>
+<%= link_to '記事一覧', "/notes" %>　>>
+<%= @note.title %>
+</div>
+
 <!--データベースの内容を "_kiji.html.erb"に書き込んで、それを読み込んでいる -->
 <!--これによってデータベースのなかでrubyを使える-->
-<% File.write("app/views/notes/_kiji.html.erb",@note.body) %>
+<% File.write("app/views/notes/_kiji.html.erb",@note.body_1) %>
 <%= render "notes/kiji" %>
 
 
