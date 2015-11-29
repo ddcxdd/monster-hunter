@@ -1,3 +1,5 @@
+<%= stylesheet_link_tag "pc/hakkens_pc", media: "all" %>
+
 <p id="notice"><%= notice %></p>
 <div class="hakken">
   <h1 class="kiji-title">発見物一覧</h1><br>
@@ -21,10 +23,13 @@
     <tr>
       <th></th>
       <th>発見物No.</th>
-      <th>クエスト名<br>No.</th>
+      <th>クエストNo.</th>
+      <th>クエスト名</th>
       <th>時間帯</th>
-      <th>発見物<br>可能性</th>
+      <th>発見物</th>
+      <th>可能性</th>
       <th>輝石</th>
+      <th>輝石数</th>
     </tr>
     </thead>
 
@@ -53,19 +58,25 @@
 
                         <td><%= image_tag "hakkenimg/"+hakken.name %></td>
                         <td><%= hakken.hakken_number %></td>
-                        <td><%= hakken.quest_name %><br><%= hakken.quest_number %>/<%= hakken.quest_number[-1].to_i+1 %></td>
+                        <td><%= hakken.quest_number %>/<%= hakken.quest_number[-1].to_i+1 %></td>
                         <!-- [-1]で右端から１文字取り出し、to_iでintegerに変換し,+1して出力 -->
+                        <td><%= hakken.quest_name %></td>
                         <td>昼/夜</td>
-                        <td><%= hakken.name %><br><%= hakken.possibility %></td>
-                        <td><%= hakken.kiseki_name %><br><%= hakken.kiseki_number %></td>
+                        <td><%= hakken.name %></td>
+                        <td><%= hakken.possibility %></td>
+                        <td><%= hakken.kiseki_name %></td>
+                        <td><%= hakken.kiseki_number %></td>
                         </tr>
                     <% else %>
                         <td><%= image_tag "hakkenimg/"+hakken.name %></td>
                         <td><%= hakken.hakken_number %></td>
-                        <td><%= hakken.quest_name %><br><%= hakken.quest_number %></td>
+                        <td><%= hakken.quest_number %></td>
+                        <td><%= hakken.quest_name %></td>
                         <td><%= hakken.day_night %></td>
-                        <td><%= hakken.name %><br><%= hakken.possibility %></td>
-                        <td><%= hakken.kiseki_name %><br><%= hakken.kiseki_number %></td>
+                        <td><%= hakken.name %></td>
+                        <td><%= hakken.possibility %></td>
+                        <td><%= hakken.kiseki_name %></td>
+                        <td><%= hakken.kiseki_number %></td>
 
 
                         </tr>

@@ -157,7 +157,7 @@ table a {
     height: 50px;
     padding-top: 40px;
     font-size: 35px;
-    margin:0;
+    margin: 0;
     align-content: center;
     text-align: center;
     background-color: #ff4275;
@@ -168,7 +168,7 @@ table a {
     border-collapse: collapse;
     background-color: white;
     width: 100%;
-    }
+}
 
 .footer td {
     width: 2000px;
@@ -178,45 +178,105 @@ table a {
     line-height: 30px;
 
 }
-.footer ul{
-    margin-bottom:50px;
+
+.footer ul {
+    margin-bottom: 50px;
 }
 
 .footer-menu-title {
     background-color: #f3f3f3;
     width: 100%;
 }
+.footer-guide td a{
+    color:#0084cd;
+    padding-top:15px;
 
-<<<<<<< HEAD
-=======
-.footer-menu td {
-    padding-bottom: 50px;
 }
->>>>>>> 23f8be5e1933283d13175f1ad86291fcd99e0354
 
-.footer-menu li {
-    margin-right: 20px;
-    margin-top: 25px;
+.footer-guide tr a{
+    height:60px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-bottom:solid 3px #EEEEEE;
+}
+
+.footer-ninki td a{
+    color:#0084cd;
+    padding-top:15px;
+    font-size:33px;
+}
+.footer-ninki th{
+    width:30px;
+}
+.footer-ninki tr a{
+    height:60px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border-bottom:solid 3px #EEEEEE;
+}
+
+.footer-ninki table{
+    width:auto;
+}
+
+
+
+.footer-buki td {
     font-size: 28px;
-    padding-left: 10px;
-
+    color: #0084cd;
+    padding-bottom: 10px;
 }
 
-<<<<<<< HEAD
-.footer-hakken{
-  margin-top:50px;
-  margin-bottom:0;
-  background-color:#f4f4f4;
-  font-size:30px;
-  padding:10px;
-
-
-
-
-=======
-.footer-menu li a {
+.footer-buki td a {
     color: #0084cd;
->>>>>>> 23f8be5e1933283d13175f1ad86291fcd99e0354
+}
+
+.footer-buki {
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 15%;
+}
+
+.footer-bougu{
+}
+.footer-bougu table {
+    width: 80%;
+}
+
+.footer-bougu td {
+    font-size: 28px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.footer-bougu td a {
+    width: auto;
+    margin: 0px;
+}
+
+.footer-bougu td a {
+    color: #0084cd;
+}
+
+.footer-bougu th {
+    padding-bottom: 10px;
+    font-size: 28px;
+    width:auto;
+}
+.footer-bougu2 a{
+    padding-left:100px;
+}
+
+.footer-hakken {
+    margin-top: 50px;
+    margin-bottom: 0;
+    background-color: #f4f4f4;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.footer-menu td a {
+    color: #0084cd;
 }
 
 .footer-bottom {

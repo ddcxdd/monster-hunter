@@ -1,0 +1,129 @@
+<%= stylesheet_link_tag "pc/hakkens_pc", media: "all" %>
+
+<p id="notice"><%= notice %></p>
+<div class="hakken">
+  <h1 class="kiji-title">ヴォルヒール群島</h1><br>
+  <ul>
+    <li><%= link_to "▶トリプー島", "/発見物/トリプー島" %></li>
+  </ul>
+  <h1 class="kiji-title">マラクジャ群島</h1>
+  <ul>
+    <li><%= link_to "▶マラクジャ島", "/発見物/マラクジャ島" %></li>
+    <li><%= link_to "▶ランバイ島", "/発見物/ランバイ島" %></li>
+    <li><%= link_to "▶フェイジョア島", "/発見物/フェイジョア島" %></li>
+    <li><%= link_to "▶クプアス島", "/発見物/クプアス島" %></li>
+    <li><%= link_to "▶カニステル島", "/発見物/カニステル島" %></li>
+    <li><%= link_to "▶ピタンガ島", "/発見物/ピタンガ島" %></li>
+  </ul>
+
+
+  <% islands=["トリプー島", "マラクジャ島",
+              "ランバイ島", "フェイジョア島",
+              "クプアス島", "カニステル島", "ピタンガ島"] %>
+
+
+  <h1 class="kiji-title">発見物の効率的な集め方</h1>
+  <p>発見物は主にクエストの途中の採集エリアで入手することができます。
+    発見確率大のものは２〜４回程度で入手できるのでまずは発見確率大のものから狙っていきましょう。
+    また、ボス前までに入手できなかった場合には、もう入手できないのでリタイアすることをおすすめします。
+    （ただし、炎熱に朽ちた遺跡や咆哮火山など一部の発見物はボス討伐後に入手できます）
+  </p>
+
+  <h1 class="kiji-title">表の見方</h1>
+  <p>
+    下の画像のように発見物No.をつけています。
+  </p>
+  <div class="mikata">
+    <table>
+      <td><%=image_tag("kiji/6-1")%></td>
+    </table>
+  </div>
+
+  <% islands.each do |island| %>
+
+      <h1 class="kiji-title" id=<%=island%>><%= island %></h1>
+
+      <table>
+        <thead>
+        <tr>
+          <th></th>
+          <th>発見物No.</th>
+          <th>クエストNo.</th>
+          <th>クエスト名</th>
+          <th>時間帯</th>
+          <th>発見物</th>
+          <th>可能性</th>
+          <th>輝石</th>
+          <th>輝石数</th>
+        </tr>
+        </thead>
+
+
+
+        <!-- @number は発見物を番号順に並べ替えるための変数-->
+        <!-- その島の発見物No.をすべて@numberに入れてからsort機能でそーとしている-->
+        <% @number =[] %>
+        <% @hakkens.each do |hakken| %>
+            <% if hakken.island == island %>
+
+                <% @number.push hakken.hakken_number %>
+            <% end %>
+        <% end %>
+        <% @number.sort! %>
+
+
+        <% line = 0 %>
+        <tbody>
+
+
+        <% @number.each do |number| %>
+            <% @hakkens.each do |hakken| %>
+                <% if hakken.island == island %>
+                    <% if number == hakken.hakken_number %>
+                        <% if line % 2 == 1 %>
+                            <tr class="even">
+                        <% else %>
+                            <tr>
+                        <% end %>
+                        <% if hakken.quest_number2 != "" %>
+
+                            <td><%= image_tag "hakkenimg/"+hakken.name %></td>
+                            <td><%= hakken.hakken_number %></td>
+                            <td><%= hakken.quest_number %>/<%= hakken.quest_number[-1].to_i+1 %></td>
+                            <!-- [-1]で右端から１文字取り出し、to_iでintegerに変換し,+1して出力 -->
+                            <td><%= hakken.quest_name %></td>
+                            <td>昼/夜</td>
+                            <td><%= hakken.name %></td>
+                            <td><%= hakken.possibility %></td>
+                            <td><%= hakken.kiseki_name %></td>
+                            <td><%= hakken.kiseki_number %></td>
+                            </tr>
+                        <% else %>
+                            <td><%= image_tag "hakkenimg/"+hakken.name %></td>
+                            <td><%= hakken.hakken_number %></td>
+                            <td><%= hakken.quest_number %></td>
+                            <td><%= hakken.quest_name %></td>
+                            <td><%= hakken.day_night %></td>
+                            <td><%= hakken.name %></td>
+                            <td><%= hakken.possibility %></td>
+                            <td><%= hakken.kiseki_name %></td>
+                            <td><%= hakken.kiseki_number %></td>
+                            </tr>
+                        <% end %>
+                        <% line = line + 1 %>
+                    <% end %>
+                <% end %>
+            <% end %>
+        <% end %>
+        </tbody>
+      </table>
+      <br>
+  <% end%>
+
+  <table>
+    <% islands.each do |island| %>
+        <td><%= link_to island, anchor:island %></td>
+    <% end %>
+  </table>
+  <br>
+</div>
