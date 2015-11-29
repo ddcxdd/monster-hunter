@@ -5,6 +5,8 @@ class CreateNotes < ActiveRecord::Migration
       t.string :title
       t.text :body
 
+
+
     end
   end
 end

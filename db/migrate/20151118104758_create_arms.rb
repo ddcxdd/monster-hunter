@@ -13,6 +13,9 @@ class CreateArms < ActiveRecord::Migration
       t.integer :item_number
       t.float :hyouka
       t.string :comment
+      t.string :arm_type
+      t.string :rare
+      t.string :senritu
 
       t.timestamps null: false
     end
