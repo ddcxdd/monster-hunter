@@ -13,14 +13,15 @@
 
   <% islands=["トリプー島", "マラクジャ島",
               "ランバイ島", "フェイジョア島",
-              "クプアス島", "カニステル島", "ピタンガ島"] %>
+             "クプアス島", "カニステル島", "ピタンガ島"] %>
+<div class="hakken-islands">
   <table>
     <% islands.each do |island| %>
         <td><%= link_to island, island %></td>
     <% end %>
   </table>
   <br>
-
+</div>
 
   <h1 class="kiji-title"><%= @hakken_addres %></h1>
 
@@ -31,7 +32,7 @@
       <th>発見物No.</th>
       <th>クエスト名<br>No.</th>
       <th>時間帯</th>
-      <th>発見物<br>可能性</th>
+      <th>発見物<br>確率</th>
       <th>輝石</th>
     </tr>
     </thead>
@@ -64,16 +65,16 @@
                         <td><%= hakken.quest_name %><br><%= hakken.quest_number %>/<%= hakken.quest_number[-1].to_i+1 %></td>
                         <!-- [-1]で右端から１文字取り出し、to_iでintegerに変換し,+1して出力 -->
                         <td>昼/夜</td>
-                        <td><%= hakken.name %><br><%= hakken.possibility %></td>
-                        <td><%= hakken.kiseki_name %><br><%= hakken.kiseki_number %></td>
+                        <td><%= hakken.name %><br><%= "(確率:"+hakken.possibility+")"%></td>
+                        <td><%= hakken.kiseki_name %><br><%=hakken.kiseki_number%>個</td>
                         </tr>
                     <% else %>
                         <td><%= image_tag "hakkenimg/"+hakken.name %></td>
                         <td><%= hakken.hakken_number %></td>
                         <td><%= hakken.quest_name %><br><%= hakken.quest_number %></td>
                         <td><%= hakken.day_night %></td>
-                        <td><%= hakken.name %><br><%= hakken.possibility %></td>
-                        <td><%= hakken.kiseki_name %><br><%= hakken.kiseki_number %></td>
+                        <td><%= hakken.name %><br><%="(確率:"+hakken.possibility+")"%></td>
+                        <td><%= hakken.kiseki_name %><br><%= hakken.kiseki_number %>個</td>
 
 
                         </tr>
