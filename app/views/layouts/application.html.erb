@@ -10,11 +10,11 @@
 </head>
 
 <div class="header" id="footer1">
-  <div class="header-image"><%= image_tag('title.jpg') %></div>
+  <div class="header-image"><%=link_to image_tag('title.jpg'),root_path %></div>
   <table>
     <th><%= link_to "攻略DB", :anchor => "footer-menu" %></th>
     <th><%= link_to "人気記事", :anchor => "footer-ninki" %></th>
-    <th><%= link_to "発見物", root_path %></th>
+    <th><%= link_to "発見物", "/発見物一覧" %></th>
     <th><%= link_to "初心者ココ！", root_path %></th>
   </table>
 
@@ -94,28 +94,28 @@
 
       <% @note = Note.find(1) %>
       <tr>
-        <td><%= image_tag("rank1") %></td>
-        <td><%= link_to @note.title, note_path(@note.id) %></td>
+        <td><%= image_tag("rank1") %>
+        <%= link_to @note.title, note_path(@note.id) %></td>
       </tr>
       <% @note = Note.find(2) %>
       <tr>
-        <td><%= image_tag("rank2") %></td>
-        <td><%= link_to @note.title, note_path(@note.id) %></td>
+        <td><%= image_tag("rank2") %>
+        <%= link_to @note.title, note_path(@note.id) %></td>
       </tr>
       <% @note = Note.find(3) %>
       <tr>
-        <td><%= image_tag("rank3") %></td>
-        <td><%= link_to @note.title, note_path(@note.id) %></td>
+        <td><%= image_tag("rank3") %>
+        <%= link_to @note.title, note_path(@note.id) %></td>
       </tr>
       <% @note = Note.find(4) %>
       <tr>
-        <td><%= image_tag("rank4") %></td>
-        <td><%= link_to @note.title, note_path(@note.id) %></td>
+        <td><%= image_tag("rank4") %>
+        <%= link_to @note.title, note_path(@note.id) %></td>
       </tr>
       <% @note = Note.find(5) %>
       <tr>
-        <td><%= image_tag("rank5") %></td>
-        <td><%= link_to @note.title, note_path(@note.id) %></td>
+        <td><%= image_tag("rank5") %>
+        <%= link_to @note.title, note_path(@note.id) %></td>
       </tr>
 
 
@@ -169,14 +169,27 @@
   <div class="footer-bougu">
 
 
-        <h5>シリーズ</h5>
+        <p>シリーズ</p>
 
       <table id="footer-bougu2">
-        <td><%= link_to " 剣士", "/bougu/kenshi" %></td>
-        <td><%= link_to " ガンナー", "/bougu/gunner" %></td>
+        <td><%= link_to "・剣士", "/bougu/kenshi" %></td>
+        <td><%= link_to "・ガンナー", "/bougu/gunner" %></td>
       </table>
 
-        <h5>属性</h5>
+
+    <p>レア度</p>
+
+    <table id="footer-bougu2">
+      <td><%= link_to "・☆1", "/bougu/☆1" %></td>
+      <td><%= link_to "・☆2", "/bougu/☆2" %></td>
+      <td><%= link_to "・☆3", "/bougu/☆3" %></td>
+      <td><%= link_to "・☆4", "/bougu/☆4" %></td>
+    </table>
+
+
+
+
+        <p>属性</p>
 
       <table id="footer-bougu2">
         <td><%= link_to "・火", "/bougu/火" %></td>
@@ -185,24 +198,17 @@
         <td><%= link_to "・氷", "/bougu/氷" %></td>
         <td><%= link_to "・土", "/bougu/土" %></td>
      </table>
-        <h5>レア度</h5>
 
-      <table id="footer-bougu2">
-        <td><%= link_to "☆1", "/bougu/☆1" %></td>
-        <td><%= link_to "☆2", "/bougu/☆2" %></td>
-        <td><%= link_to "☆3", "/bougu/☆3" %></td>
-        <td><%= link_to "☆4", "/bougu/☆4" %></td>
-  </table>
 
 
 
   </div>
   <ul class="footer-bottom">
-    <li>トップ</li>
-    <li>ヘルプ</li>
-    <li>利用規約</li>
-    <li>プライバシーポリシー</li>
-    <li>お問い合わせ</li>
+    <li><%=link_to "トップ",root_path %></li>
+    <li><%=link_to "ヘルプ",root_path %></li>
+    <li><%=link_to "利用規約",root_path %></li>
+    <li><%=link_to "プライバシーポリシー",root_path %></li>
+    <li><%=link_to "お問い合わせ",root_path %></li>
     <br>copyright (C)
 
   </ul>
