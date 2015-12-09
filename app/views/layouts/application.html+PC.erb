@@ -26,13 +26,7 @@
       <th><%= link_to "Q&A", root_path %></th>
       <th><%= link_to "検索", root_path %></th>
       <th><%= link_to "攻略のコツ", root_path %></th>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
+
     </table>
 
   </div>
@@ -58,11 +52,12 @@
         </tr>
       </table>
 
+      <br>
 
       <h1 id="footer-menu">メニュー</h1>
       <table>
         <tr>
-          <td><%= link_to '発見物一覧', "/発見物一覧" %></td>
+          <td class="sidebar-midashi"><%= link_to '発見物一覧', "/発見物一覧" %></td>
         </tr>
         <tr>
           <td>
@@ -78,7 +73,7 @@
           </td>
         </tr>
         <tr>
-          <td><%= link_to '武器', arms_path %></td>
+          <td class="sidebar-midashi"><%= link_to '武器', arms_path %></td>
         </tr>
         <tr class="arm-menu">
           <td>
@@ -102,30 +97,30 @@
 
 
         <tr>
-          <td><%= link_to '防具', root_path %></td>
+          <td class="sidebar-midashi"><%= link_to '防具', root_path %></td>
         </tr>
         <tr class="bougu-menu">
           <td>
             <ul>
-              <li><%= link_to "剣士", "/bougu/kenshi" %></li>
-              <li><%= link_to "ガンナー", "/bougu/gunner" %></li>
-              <li><%= link_to "頭", "/bougu/head" %></li>
-              <li><%= link_to "☆1", "/bougu/☆1" %></li>
-              <li><%= link_to "胴", "/bougu/body" %></li>
-              <li><%= link_to "☆2", "/bougu/☆2" %></li>
-              <li><%= link_to "腕", "/bougu/hand" %></li>
-              <li><%= link_to "☆3", "/bougu/☆3" %></li>
-              <li><%= link_to "腰", "/bougu/waist" %></li>
-              <li><%= link_to "☆4", "/bougu/☆4" %></li>
-              <li><%= link_to "脚", "/bougu/leg" %></li>
+              <li><%= link_to "▶剣士", "/bougu/kenshi" %></li>
+              <li><%= link_to "▶ガンナー", "/bougu/gunner" %></li>
+              <li><%= link_to "▶頭", "/bougu/head" %></li>
+              <li><%= link_to "▶胴", "/bougu/body" %></li>
+              <li><%= link_to "▶腕", "/bougu/hand" %></li>
+              <li><%= link_to "▶腰", "/bougu/waist" %></li>
+              <li><%= link_to "▶脚", "/bougu/leg" %></li>
+              <li><%= link_to "▶☆1", "/bougu/☆1" %></li>
+              <li><%= link_to "▶☆2", "/bougu/☆2" %></li>
+              <li><%= link_to "▶☆3", "/bougu/☆3" %></li>
+              <li><%= link_to "▶☆4", "/bougu/☆4" %></li>
             </ul>
           </td>
         </tr>
         <tr>
-          <td><%= link_to 'モンスター', monsters_path %></td>
+          <td class="sidebar-midashi"><%= link_to 'モンスター', monsters_path %></td>
         </tr>
         <tr>
-          <td><%= link_to 'スキル', root_path %></td>
+          <td class="sidebar-midashi"><%= link_to 'スキル', root_path %></td>
         </tr>
       </table>
     </div>

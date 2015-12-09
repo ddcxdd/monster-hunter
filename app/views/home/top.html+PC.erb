@@ -1,3 +1,47 @@
+<table class="schedule">
+  <tr>
+    <td>時間</td>
+    <td>月</td>
+    <td>火</td>
+    <td>水</td>
+    <td>木</td>
+    <td>金</td>
+    <td>土</td>
+    <td>日</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td rowspan="13" bgcolor="#ffccc5">強化</td>
+    <td rowspan="13" bgcolor="#ffffc5">換金</td>
+    <td rowspan="13" bgcolor="#d2f8ff">錬糸</td>
+    <td rowspan="13" bgcolor="#dbffd4">樹木</td>
+    <td rowspan="13" bgcolor="#e7c1ff">染料</td>
+    <td rowspan="13" bgcolor="#eeeeee">炭</td>
+    <td rowspan="13" bgcolor="#ffccc5">強化</td>
+  </tr>
+  <%= 12.times do |i| %>
+  <tr>
+    <td><%=i+2%></td>
+  </tr>
+      <% end %>
+  <tr>
+    <td>14</td>
+    <td rowspan=11 bgcolor="#ffffc5">換金</td>
+    <td rowspan=11 bgcolor="#d2f8ff">錬糸</td>
+    <td rowspan=11 bgcolor="#dbffd4">樹木</td>
+    <td rowspan=11 bgcolor="#e7c1ff">染料</td>
+    <td rowspan=11 bgcolor="#eeeeee">炭</td>
+    <td rowspan=11 bgcolor="#ffccc5">強化</td>
+    <td rowspan=11 bgcolor="#ffccc5">強化</td>
+
+  </tr>
+  <%= 10.times do |i| %>
+  <tr>
+    <td><%=i+15%></td>
+  </tr>
+      <%end%>
+</table>
+
 <h1 class="kiji-title">最新イベント情報</h1>
 <ul class="new-event">
   <li><h1 class="kiji-title">2015年10月28日大型アップデート</h1>
