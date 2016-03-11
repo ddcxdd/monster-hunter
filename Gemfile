@@ -31,6 +31,8 @@ gem 'capistrano'
 gem 'capistrano-rails'
 gem 'capistrano-bundler'
 gem 'capistrano-rbenv', github: "capistrano/rbenv"
+
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
