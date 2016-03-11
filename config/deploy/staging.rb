@@ -1,5 +1,5 @@
 
-set :stage, :development
+set :stage, :staging
 role :app, %w{mocorio@153.126.185.155}
 role :web, %w{mocorio@153.126.185.155}
 role :db, %w{mocorio@153.126.185.155}
