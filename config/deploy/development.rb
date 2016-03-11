@@ -8,5 +8,7 @@ user: 'mocorio',
 roles: %w{web app db},
 ssh_options: {
  auth_methods: %w(password),
- password: 'famima00'
+ password: 'famima00',
+ keys: %w(/Users/kenta/.ssh/monhun_rsa)
+ 
 }
