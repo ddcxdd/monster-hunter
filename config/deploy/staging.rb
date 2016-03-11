@@ -1,13 +1,20 @@
 
-set :stage, :staging
-set :rails_env, 'staging'
+set :stage, :development
+role :app, %w{mocorio@153.126.185.155}
+role :web, %w{mocorio@153.126.185.155}
+role :db, %w{mocorio@153.126.185.155}
 
-server '153.126.185.155', port: 1549, user: 'mocorio', roles: %w{web app db}, ssh_options: {
-  keys: %w(~/.vagrant.d/insecure_private_key),
-  forward_agent: true,
-  auth_methods: %w(publickey)
+server '153.126.185.155',
+user: 'mocorio',
+roles: %w{web app db},
+ssh_options: {
+ auth_methods: %w(password),
+ password: 'famima00',
+ keys: %w(/Users/kenta/.ssh/monhun_rsa),
+ port:  "1549"
+
+
 }
-
 
 # server-based syntax
 # ======================
