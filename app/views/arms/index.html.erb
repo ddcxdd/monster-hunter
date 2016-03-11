@@ -1,7 +1,37 @@
 
 <p id="notice"><%= notice %></p>
 <div class="arms">
-  <h1 class="kiji-title"><%= @arm_type%>一覧</h1>
+  <% case @arm_type %>
+  <% when "tachi" %>
+    <h1 class="kiji-title">太刀一覧</h1>
+  <% when "taiken" %>
+      <h1 class="kiji-title">大剣一覧</h1>
+  <% when "souken" %>
+      <h1 class="kiji-title">双剣一覧</h1>
+  <% when "hue" %>
+      <h1 class="kiji-title">笛一覧</h1>
+  <% when "hummer" %>
+      <h1 class="kiji-title">ハンマー一覧</h1>
+  <% when "gunlance" %>
+      <h1 class="kiji-title">ガンランス一覧</h1>
+  <% when "light" %>
+      <h1 class="kiji-title">ライトボウガン一覧</h1>
+  <% when "heavy" %>
+      <h1 class="kiji-title">ヘビィボウガン一覧</h1>
+  <% when "charge" %>
+      <h1 class="kiji-title">チャージアックス一覧</h1>
+  <% when "slush" %>
+      <h1 class="kiji-title">スラッシュアックス一覧</h1>
+  <% when "lance" %>
+      <h1 class="kiji-title">ランス一覧</h1>
+  <% when "yumi" %>
+      <h1 class="kiji-title">弓一覧</h1>
+  <% when "katate" %>
+      <h1 class="kiji-title">片手剣一覧</h1>
+
+  <% end %>
+
+
 
   <table>
     <thead>

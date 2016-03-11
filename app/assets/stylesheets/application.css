@@ -132,6 +132,10 @@ table a {
     height: 500px;
 }
 
+.kiji-title {
+    text-align: center;
+}
+
 .schedule td{
 border-left:white solid 10px;
     border-right:white solid 10px;
