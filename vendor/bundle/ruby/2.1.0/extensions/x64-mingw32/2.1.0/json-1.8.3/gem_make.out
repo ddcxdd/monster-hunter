@@ -1,0 +1,14 @@
+current directory: C:/Users/12345/work/monster-hunter/vendor/bundle/ruby/2.1.0/gems/json-1.8.3/ext/json
+C:/Ruby21-x64/bin/ruby.exe -r ./siteconf20160604-12912-ofe8rm.rb extconf.rb
+creating Makefile
+
+current directory: C:/Users/12345/work/monster-hunter/vendor/bundle/ruby/2.1.0/gems/json-1.8.3/ext/json
+make "DESTDIR=" clean
+
+current directory: C:/Users/12345/work/monster-hunter/vendor/bundle/ruby/2.1.0/gems/json-1.8.3/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: C:/Users/12345/work/monster-hunter/vendor/bundle/ruby/2.1.0/gems/json-1.8.3/ext/json
+make "DESTDIR=" install
+installing default libraries
