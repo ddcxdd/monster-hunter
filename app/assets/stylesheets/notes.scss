@@ -2,15 +2,75 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.kiji {
-  margin: 50px;
-  line-height: 70px;
-  font-size: 13px;
+.kiji-title{
+  height:120px;
+  margin:0;
+  margin-top:10px;
+  margin-bottom:10px;
+  background-color:white;
 }
 
+.kiji-title h1{
+font-size:80px;
+  margin:0;
+}
+.kiji-title p{
+  font-size:25px;
+  color:blue;
+}
+.kiji-text{
+  background-color:white;
+  line-height:100%;
+}
+
+.kiji-text .name{
+  color:blue;
+}
+.kiji-text li{
+  border-bottom:2px solid black;
+}
+.kiji-text .jap{
+}
+.kiji-text .eng{
+  size:10fpx;
+  color:#999999;
+}
+.first{
+ line-height:100%;
+
+}
+.second{
+  margin-left:30px;
+  line-height:100%;
+
+}
+.third{
+  margin-left:60px;
+}
+.forth{
+  margin-left:90px;
+}
+.fifth{
+  margin-left:120px;
+}
+.six{
+  margin-left:150px;
+}
+
+.kiji {
+  margin: 5px;
+  line-height: 70px;
+  font-size: 13px;
+
+}
+.h3{
+  color:orange !important;
+}
+.p{
+  color:orange;
+}
 .kiji-title {
 	font-weight:normal;
-	border-bottom: solid #000 2px;
 	padding-bottom:30px;
 
 }

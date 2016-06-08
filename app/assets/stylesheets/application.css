@@ -15,8 +15,13 @@
  */
 
 /*body */
+
+
 body {
     margin: 0px;
+    margin-left:10px;
+    margin-right:10px;
+    background-color:#bbbbbb;
 }
 
 li {
@@ -109,7 +114,6 @@ table a {
 /*メイン*/
 .main {
     margin: 0 auto;
-    margin-bottom: 150px;
 }
 
 .main table {
