@@ -16,7 +16,7 @@ default: &default
   username:
   password:
   socket: /tmp/mysql.sock
-
+  host: localhost
 development:
   <<: *default
   database: monsters_development
