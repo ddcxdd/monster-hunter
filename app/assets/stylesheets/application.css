@@ -405,9 +405,22 @@ border-left:white solid 10px;
 }
 
 
+.new-kiji .tr{
+    width:100%;
 
+}
 
+.new-kiji img{
+    height:150px;
+    width:150px;
+}
+.new-kiji .td-image{
+    width:150px;
 
+}
+.new-kiji .new-title{
+    font:100px;
+}
 
 /*消してもいいよ*??/
 body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td  {

@@ -121,9 +121,45 @@
   </div>
 
 
+  <h1 id="footer-ninki">最新記事</h1>
+
+  <div class="footer-ninki">
+    <table>
+
+      <% @note = Note.find(1) %>
+      <tr>
+        <td><%= image_tag("rank1") %>
+          <%= link_to @note.title, note_path(@note.id) %></td>
+      </tr>
+      <% @note = Note.find(2) %>
+      <tr>
+        <td><%= image_tag("rank2") %>
+          <%= link_to @note.title, note_path(@note.id) %></td>
+      </tr>
+      <% @note = Note.find(3) %>
+      <tr>
+        <td><%= image_tag("rank3") %>
+          <%= link_to @note.title, note_path(@note.id) %></td>
+      </tr>
+      <% @note = Note.find(4) %>
+      <tr>
+        <td><%= image_tag("rank4") %>
+          <%= link_to @note.title, note_path(@note.id) %></td>
+      </tr>
+      <% @note = Note.find(5) %>
+      <tr>
+        <td><%= image_tag("rank5") %>
+          <%= link_to @note.title, note_path(@note.id) %></td>
+      </tr>
+
+
+    </table>
+  </div>
+
+
   <h1 id="footer-menu">メニュー</h1>
 
-  <p class="footer-hakken">武器</p>
+  <p class="footer-hakken">ジャンル</p>
 
 
     
@@ -132,74 +168,30 @@
     <table>
 
       <tr>
-        <td><%= link_to "・太刀", "/arms/tachi" %></td>
-        <td><%= link_to "・片手剣", "/arms/katate" %></td>
+        <td><%= link_to "・4chan", "/arms/tachi" %></td>
+        <td><%= link_to "・reddit", "/arms/katate" %></td>
       </tr>
 
       <tr>
-        <td><%= link_to "・双剣", "/arms/souken" %></td>
-        <td><%= link_to "・ハンマー", "/arms/hummer" %></td>
+        <td><%= link_to "・ニュース", "/arms/souken" %></td>
+        <td><%= link_to "・アニメ・漫画", "/arms/hummer" %></td>
       <tr>
-        <td><%= link_to "・狩猟笛", "/arms/hue" %></td>
-        <td><%= link_to "・ランス", "/arms/lance" %></td>
+        <td><%= link_to "・ゲーム", "/arms/hue" %></td>
+        <td><%= link_to "・動物", "/arms/lance" %></td>
       </tr>
       <tr>
-        <td><%= link_to "・ガンランス", "/arms/gunlance" %></td>
-        <td><%= link_to "・スラッシュアックス", "/arms/slush" %></td>
+        <td><%= link_to "・ガジェット", "/arms/gunlance" %></td>
+        <td><%= link_to "・芸能", "/arms/slush" %></td>
       </tr>
       <tr>
-        <td><%= link_to "・ライトボウガン", "/arms/light" %></td>
-        <td><%= link_to "・ヘビィボウガン", "/arms/heavy" %></td>
-      </tr>
-      <tr>
-        <td><%= link_to "・弓", "/arms/yumi" %></td>
-        <td><%= link_to "・チャージアックス", "/arms/charge" %></td>
-      </tr>
-      <tr>
-        <td><%= link_to "・大剣", "/arms/taiken" %></td>
+        <td><%= link_to "・生活", "/arms/light" %></td>
+        <td><%= link_to "・学問", "/arms/heavy" %></td>
       </tr>
 
     </table>
   </div>
 
-  <p class="footer-hakken">防具</p>
 
-  <div class="footer-bougu">
-
-
-        <p>シリーズ</p>
-
-      <table id="footer-bougu2">
-        <td><%= link_to "・剣士", "/bougu/kenshi" %></td>
-        <td><%= link_to "・ガンナー", "/bougu/gunner" %></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </table>
-
-
-    <p>レア度</p>
-
-    <table id="footer-bougu2">
-      <td><%= link_to "・☆1", "/bougu/☆1" %></td>
-      <td><%= link_to "・☆2", "/bougu/☆2" %></td>
-      <td><%= link_to "・☆3", "/bougu/☆3" %></td>
-      <td><%= link_to "・☆4", "/bougu/☆4" %></td>
-      <td></td>
-    </table>
-
-
-
-
-        <p>属性</p>
-
-      <table id="footer-bougu2">
-        <td><%= link_to "・火", "/bougu/火" %></td>
-        <td><%= link_to "・水", "/bougu/水" %></td>
-        <td><%= link_to "・雷", "/bougu/雷" %></td>
-        <td><%= link_to "・氷", "/bougu/氷" %></td>
-        <td><%= link_to "・土", "/bougu/土" %></td>
-     </table>
 
 
 

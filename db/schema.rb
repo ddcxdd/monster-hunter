@@ -72,10 +72,11 @@ ActiveRecord::Schema.define(version: 20151124081652) do
   end
 
   create_table "notes", force: :cascade do |t|
-    t.string "name",   limit: 255
-    t.string "title",  limit: 255
-    t.text   "body_1", limit: 65535
-    t.text   "body_2", limit: 65535
+    t.string   "name",       limit: 255
+    t.string   "title",      limit: 255
+    t.text     "body_1",     limit: 65535
+    t.text     "body_2",     limit: 65535
+    t.datetime "created_at"
   end
 
 end

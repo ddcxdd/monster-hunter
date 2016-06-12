@@ -1,26 +1,20 @@
-<div class="main-content">
-  <h1 class="kiji-title">最新イベント情報</h1>
-  <ul class="new-event">
-    <li><h1 class="kiji-title">2015年10月28日大型アップデート</h1>
-      <%= link_to image_tag("2015-10-28-update.png"), root_path %>
-
-    </li>
-
-    <li><h1 class="kiji-title">進撃の巨人コラボイベント</h1>
-      <%= link_to image_tag("shingeki.jpg"), root_path %>
-
-    </li>
 
 
-    <li><h1 class="kiji-title">☆4襲来クエスト</h1>
-      <%= link_to image_tag("rare_4_quest.jpg"), root_path %>
-
-    </li>
+  <% @notes_order=Note.order(id: :desc) %>
 
 
-  </ul>
 
-  <p>最新実況動画</p>
-  <iframe width="900" height="515" src="https://www.youtube.com/embed/UOkDyj3wajk" frameborder="0" allowfullscreen></iframe>
+<% @note = @notes_order.take(5) %>
 
-</div>
+
+    <% @note.each do |note| %>
+      <table class="new-kiji">
+      <tr>
+        <td rowspan="2" class="td-image"><%= image_tag(note.id)%></td>
+      <td class="new-title"><%= link_to note.title, note_path(note.id) %></td>
+        </tr>
+        <tr><td><%= note.created_at.to_s[0,16] %></td></tr>
+      </table>
+
+<% end %>
+</table>
