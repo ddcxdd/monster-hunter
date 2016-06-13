@@ -1,20 +1,22 @@
 
 
-  <% @notes_order=Note.order(id: :desc) %>
+<% @notes_order=Note.order(id: :desc) %>
 
 
 
 <% @note = @notes_order.take(5) %>
 
-
     <% @note.each do |note| %>
       <table class="new-kiji">
       <tr>
-        <td rowspan="2" class="td-image"><%= image_tag(note.id)%></td>
-      <td class="new-title"><%= link_to note.title, note_path(note.id) %></td>
+        <% if File.exist?("app/assets/images/#{note.id}.jpg") %>
+            <td rowspan="2" class="new-kiji-image"><%= image_tag(note.id)%></td>
+        <% else %>
+            <td rowspan="2" class="new-kiji-image"><%= image_tag(note.id)%></td>
+        <% end %>
+      <td class="new-kiji-title"><%= link_to note.title, note_path(note.id) %></td>
         </tr>
-        <tr><td><%= note.created_at.to_s[0,16] %></td></tr>
+        <tr><td class="new-kiji-date"><%= note.created_at.to_s[0,16] %></td></tr>
       </table>
 
 <% end %>
-</table>

@@ -174,10 +174,10 @@ border-left:white solid 10px;
     padding-top: 25px;
     padding-bottom:15px;
     font-size: 35px;
-    margin-top: 25px;
     align-content: center;
     text-align: center;
     background-color: #ff4275;
+    margin:0px;
 
 }
 
@@ -265,10 +265,11 @@ border-left:white solid 10px;
 }
 
 .footer-buki {
-    margin-top:40px;
+    margin-top:0px;
     padding-top: 20px;
     padding-left: 10%;
     padding-right: 15%;
+    background-color:white;
 }
 
 .footer-bougu{
@@ -321,7 +322,7 @@ border-left:white solid 10px;
 
 
 .footer-hakken {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-bottom: 0;
     background-color: #f4f4f4;
     font-size: 30px;
@@ -343,7 +344,7 @@ border-left:white solid 10px;
     margin-top:10px;
 }
 .footer-hakken{
-  margin-top:50px;
+  margin-top:0px;
   margin-bottom:0;
   background-color:#f4f4f4;
   font-size:30px;
@@ -409,17 +410,27 @@ border-left:white solid 10px;
     width:100%;
 
 }
+.new-kiji{
+    border-bottom:5px dotted black !important ;
+    border-top:none !important;
+    border-right:none !important;
+    border-left:none !important;
+    background-color:white;
 
+}
 .new-kiji img{
     height:150px;
     width:150px;
 }
-.new-kiji .td-image{
+.new-kiji .new-kiji-image{
     width:150px;
 
 }
-.new-kiji .new-title{
-    font:100px;
+.new-kiji .new-kiji-title{
+    font-size:50px;
+}
+.new-kiji .new-kiji-date{
+    font-size:20px;
 }
 
 /*消してもいいよ*??/
