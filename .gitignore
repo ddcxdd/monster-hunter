@@ -12,4 +12,5 @@
 !/log/.keep
 /tmp
 /config/database.yml
+/app/views/notes/_kiji.html.erb
 
